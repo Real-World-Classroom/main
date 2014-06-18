@@ -2621,44 +2621,6 @@ a.elgg-widget-collapsed:before {
 	-moz-border-radius: 6px;
 	border-radius: 6px;
 }
-/*** Elgg Developer Tools ***/
-#developers-iframe {
-	width: 100%;
-	height: 600px;
-	border: none;
-}
-#developer-settings-form label {
-	margin-right: 5px;
-}
-.elgg-page .jstree-default.jstree-focused {
-	background-color: transparent;
-}
-.developers-log {
-	background-color: #EBF5FF;
-	border: 1px solid #999;
-	color: #666;
-	padding: 20px;
-}
-
-.developers-content-thin {
-	max-width: 600px;
-}
-/* Blog Plugin */
-
-/* force tinymce input height for a more useful editing / blog creation area */
-form#blog-post-edit #description_parent #description_ifr {
-	height:400px !important;
-}
-.elgg-icon-bookmark {
-	background: transparent url(http://54.187.111.184/realworldclassroom/mod/bookmarks/graphics/bookmark.gif);
-}.file-photo {
-	text-align: center;
-	margin-bottom: 15px;
-}
-.file-gallery-item {
-	text-align: center;
-	width: 165px;
-}
 .groups-profile > .elgg-image {
 	margin-right: 10px;
 }
@@ -2726,6 +2688,37 @@ form#blog-post-edit #description_parent #description_ifr {
 .elgg-menu-groups-my-status li.elgg-state-selected > a {
 	background-color: #4690D6;
 	color: white;
+}
+/*** Elgg Developer Tools ***/
+#developers-iframe {
+	width: 100%;
+	height: 600px;
+	border: none;
+}
+#developer-settings-form label {
+	margin-right: 5px;
+}
+.elgg-page .jstree-default.jstree-focused {
+	background-color: transparent;
+}
+.developers-log {
+	background-color: #EBF5FF;
+	border: 1px solid #999;
+	color: #666;
+	padding: 20px;
+}
+
+.developers-content-thin {
+	max-width: 600px;
+}.elgg-icon-bookmark {
+	background: transparent url(http://54.187.111.184/realworldclassroom/mod/bookmarks/graphics/bookmark.gif);
+}.file-photo {
+	text-align: center;
+	margin-bottom: 15px;
+}
+.file-gallery-item {
+	text-align: center;
+	width: 165px;
 }
 
 /* ***************************************
@@ -3236,19 +3229,3 @@ li.custom_fields_edit_profile_category {
 }
 
 /* End Account Username Change */
-/*******************************
-	Custom Index
-********************************/
-.custom-index {
-	padding: 10px 0;
-}
-.elgg-module-highlight {
-	-webkit-box-shadow: 1px 1px 5px #CCC;
-	-moz-box-shadow: 1px 1px 5px #CCC;
-	box-shadow: 1px 1px 5px #CCC;
-}
-.elgg-module-highlight:hover {
-	-webkit-box-shadow: 1px 1px 6px #AAA;
-	-moz-box-shadow: 1px 1px 6px #AAA;
-	box-shadow: 1px 1px 6px #AAA;
-}

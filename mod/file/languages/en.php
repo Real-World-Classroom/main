@@ -10,9 +10,9 @@ $english = array(
 	/**
 	 * Menu items and titles
 	 */
-	'file' => "Files",
-	'file:user' => "%s's files",
-	'file:friends' => "Friends' files",
+	'file' => "Portfolio",
+	'file:user' => "%s's portfolio",
+	'file:friends' => "Friends' portfolios",
 	'file:all' => "All site files",
 	'file:edit' => "Edit file",
 	'file:more' => "More files",

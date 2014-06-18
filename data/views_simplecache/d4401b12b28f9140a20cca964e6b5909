@@ -2248,6 +2248,12 @@ elgg.register_hook_handler('init', 'system', function() {
 	}
 }, 400);
 
+// this adds a class to support IE8 and older
+elgg.register_hook_handler('init', 'system', function() {
+	// jQuery uses 0-based indexing
+	$('#groups-tools').children('li:even').addClass('odd');
+});
+
 elgg.provide('elgg.bookmarks');
 
 elgg.bookmarks.init = function() {
@@ -2259,12 +2265,6 @@ elgg.bookmarks.init = function() {
 };
 
 elgg.register_hook_handler('init', 'system', elgg.bookmarks.init);
-
-// this adds a class to support IE8 and older
-elgg.register_hook_handler('init', 'system', function() {
-	// jQuery uses 0-based indexing
-	$('#groups-tools').children('li:even').addClass('odd');
-});
 
 /**
  * Repositions the likes popup
