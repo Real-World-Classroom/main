@@ -2621,7 +2621,28 @@ a.elgg-widget-collapsed:before {
 	-moz-border-radius: 6px;
 	border-radius: 6px;
 }
-.groups-profile > .elgg-image {
+/*** Elgg Developer Tools ***/
+#developers-iframe {
+	width: 100%;
+	height: 600px;
+	border: none;
+}
+#developer-settings-form label {
+	margin-right: 5px;
+}
+.elgg-page .jstree-default.jstree-focused {
+	background-color: transparent;
+}
+.developers-log {
+	background-color: #EBF5FF;
+	border: 1px solid #999;
+	color: #666;
+	padding: 20px;
+}
+
+.developers-content-thin {
+	max-width: 600px;
+}.groups-profile > .elgg-image {
 	margin-right: 10px;
 }
 .groups-stats {
@@ -2689,28 +2710,7 @@ a.elgg-widget-collapsed:before {
 	background-color: #4690D6;
 	color: white;
 }
-/*** Elgg Developer Tools ***/
-#developers-iframe {
-	width: 100%;
-	height: 600px;
-	border: none;
-}
-#developer-settings-form label {
-	margin-right: 5px;
-}
-.elgg-page .jstree-default.jstree-focused {
-	background-color: transparent;
-}
-.developers-log {
-	background-color: #EBF5FF;
-	border: 1px solid #999;
-	color: #666;
-	padding: 20px;
-}
-
-.developers-content-thin {
-	max-width: 600px;
-}.elgg-icon-bookmark {
+.elgg-icon-bookmark {
 	background: transparent url(http://54.187.111.184/realworldclassroom/mod/bookmarks/graphics/bookmark.gif);
 }.file-photo {
 	text-align: center;
