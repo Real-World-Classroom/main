@@ -8,6 +8,17 @@ function guiding_questions_init() {
 }
 
 function guiding_questions_page_handler() {
-    include elgg_get_plugins_path() . 'guiding_questions/pages/guiding_questions/guiding_questions.php';
+    switch ($segments[1]) {
+        case 'view':
+           include elgg_get_plugins_path() . 'guiding_questions/pages/guiding_questions/view.php';
+           break;
+
+        case 'answer':
+        default:
+           include elgg_get_plugins_path() . 'guiding_questions/pages/guiding_questions/answer.php';
+           break;
+    }
+
     return true;
+
 }
