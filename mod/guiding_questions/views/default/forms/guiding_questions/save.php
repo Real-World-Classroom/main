@@ -19,7 +19,7 @@
 </div>
 
 <div>
-    <label><?php echo elgg_echo("What kind of experience do you want?"); ?></label><br />
+    <label><?php echo elgg_echo("What experience do you want?"); ?></label><br />
     <?php echo elgg_view('input/longtext',array('name' => 'answer5')); ?>
 </div>
 

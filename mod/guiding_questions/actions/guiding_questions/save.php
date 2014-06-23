@@ -15,27 +15,27 @@ $question1->description = $answer1;
 
 $question2 = new ElggObject();
 $question2->subtype = "guiding_question_2";
-$question2->title = "What do you want right now, more than anything else?";
+$question2->title = "What would it do for you?";
 $question2->description = $answer2;
 
 $question3 = new ElggObject();
 $question3->subtype = "guiding_question_3";
-$question3->title = "What do you want right now, more than anything else?";
+$question3->title = "How would you feel if you got it?";
 $question3->description = $answer3;
 
 $question4 = new ElggObject();
 $question4->subtype = "guiding_question_4";
-$question4->title = "What do you want right now, more than anything else?";
+$question4->title = "How do you want to spend your time?";
 $question4->description = $answer4;
 
 $question5 = new ElggObject();
 $question5->subtype = "guiding_question_5";
-$question5->title = "What do you want right now, more than anything else?";
+$question5->title = "What experience do you want?";
 $question5->description = $answer5;
 
 $question6 = new ElggObject();
 $question6->subtype = "guiding_question_6";
-$question6->title = "What do you want right now, more than anything else?";
+$question6->title = "What's your plan for getting what you want?";
 $question6->description = $answer6;
 
 // for now make all guiding_questions answers private
