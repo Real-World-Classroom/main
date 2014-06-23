@@ -18,7 +18,5 @@ function guiding_questions_page_handler() {
            include elgg_get_plugins_path() . 'guiding_questions/pages/guiding_questions/answer.php';
            break;
     }
-
     return true;
-
 }

@@ -1,28 +1,72 @@
 <?php
 // get the form inputs
 $answer1 = get_input('answer1');
+$answer2 = get_input('answer2');
+$answer3 = get_input('answer3');
+$answer4 = get_input('answer4');
+$answer5 = get_input('answer5');
+$answer6 = get_input('answer6');
 
-// create a new guiding_questions object
+// create a guiding_questions objects to store answers
 $question1 = new ElggObject();
-$question1->subtype = "guiding_question";
-$question1->title = "Question #1:";
+$question1->subtype = "guiding_question_1";
+$question1->title = "What do you want right now, more than anything else?";
 $question1->description = $answer1;
+
+$question2 = new ElggObject();
+$question2->subtype = "guiding_question_2";
+$question2->title = "What do you want right now, more than anything else?";
+$question2->description = $answer2;
+
+$question3 = new ElggObject();
+$question3->subtype = "guiding_question_3";
+$question3->title = "What do you want right now, more than anything else?";
+$question3->description = $answer3;
+
+$question4 = new ElggObject();
+$question4->subtype = "guiding_question_4";
+$question4->title = "What do you want right now, more than anything else?";
+$question4->description = $answer4;
+
+$question5 = new ElggObject();
+$question5->subtype = "guiding_question_5";
+$question5->title = "What do you want right now, more than anything else?";
+$question5->description = $answer5;
+
+$question6 = new ElggObject();
+$question6->subtype = "guiding_question_6";
+$question6->title = "What do you want right now, more than anything else?";
+$question6->description = $answer6;
 
 // for now make all guiding_questions answers private
 $question1->access_id = ACCESS_PRIVATE;
+$question2->access_id = ACCESS_PRIVATE;
+$question3->access_id = ACCESS_PRIVATE;
+$question4->access_id = ACCESS_PRIVATE;
+$question5->access_id = ACCESS_PRIVATE;
+$question6->access_id = ACCESS_PRIVATE;
 
 // owner is logged in user
 $question1->owner_guid = elgg_get_logged_in_user_guid();
+$question2->owner_guid = elgg_get_logged_in_user_guid();
+$question3->owner_guid = elgg_get_logged_in_user_guid();
+$question4->owner_guid = elgg_get_logged_in_user_guid();
+$question5->owner_guid = elgg_get_logged_in_user_guid();
+$question6->owner_guid = elgg_get_logged_in_user_guid();
 
 // save to database and get id of the new guiding_questions object
 $question1_guid = $question1->save();
+$question2_guid = $question2->save();
+$question3_guid = $question3->save();
+$question4_guid = $question4->save();
+$question5_guid = $question5->save();
+$question6_guid = $question6->save();
 
-// if the guiding_questions object was saved, we want to display the new answer
-// otherwise, we want to register an error and forward back to the form
-if ($question1_guid) {
-   system_message("Your answer was saved");
-   forward($question1->getURL());
+// if any guiding_questions objects were saved, report success, otherwise report failure
+if ($question1_guid || $question2_guid || $question3_guid || $question4_guid || $question5_guid || $question6_guid) {
+   system_message("Your answers were saved");
+   forward(REFERER); // REFERER is a global variable that defines the previous page
 } else {
    register_error("Your answer could not be saved");
-   forward(REFERER); // REFERER is a global variable that defines the previous page
+   forward(REFERER);
 }
