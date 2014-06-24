@@ -54,19 +54,32 @@ $question4->owner_guid = elgg_get_logged_in_user_guid();
 $question5->owner_guid = elgg_get_logged_in_user_guid();
 $question6->owner_guid = elgg_get_logged_in_user_guid();
 
-// save to database and get id of the new guiding_questions object
-$question1_guid = $question1->save();
-$question2_guid = $question2->save();
-$question3_guid = $question3->save();
-$question4_guid = $question4->save();
-$question5_guid = $question5->save();
-$question6_guid = $question6->save();
+// save to database and get id of the new guiding_questions object,
+// but only if user entered an answer
+if (!empty($answer1)) {
+	$question1_guid = $question1->save();
+}
+if (!empty($answer2)) {
+	$question2_guid = $question2->save();
+}
+if (!empty($answer3)) {
+	$question3_guid = $question3->save();
+}
+if (!empty($answer4)) {
+	$question4_guid = $question4->save();
+}
+if (!empty($answer5)) {
+	$question5_guid = $question5->save();
+}
+if (!empty($answer6)) {
+	$question6_guid = $question6->save();
+}
 
 // if any guiding_questions objects were saved, report success, otherwise report failure
 if ($question1_guid || $question2_guid || $question3_guid || $question4_guid || $question5_guid || $question6_guid) {
    system_message("Your answers were saved");
    forward(REFERER); // REFERER is a global variable that defines the previous page
 } else {
-   register_error("Your answer could not be saved");
+   register_error("No answers were saved");
    forward(REFERER);
 }

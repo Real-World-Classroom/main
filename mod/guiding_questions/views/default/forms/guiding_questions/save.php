@@ -1,6 +1,7 @@
 <div>
     <label><?php echo elgg_echo("What do you want right now, more than anything else?"); ?></label><br />
     <?php echo elgg_view('input/longtext',array('name' => 'answer1')); ?>
+    <a href='/realworldclassroom/guiding_questions/view'>View past responses here</a>
 </div>
 
 <div>
