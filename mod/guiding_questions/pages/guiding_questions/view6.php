@@ -5,75 +5,10 @@ gatekeeper();
 
 // set the title
 // for distributed plugins, be sure to use elgg_echo() for internationalization
-$title = "All Past Answers";
+$title = "Past Answers";
 
 // start building the main column of the page
 $content = elgg_view_title($title);
-
-$answers = elgg_get_entities(array(
-    'type' => 'object',
-    'subtype' => 'guiding_question_1',
-    'owner_guid' => elgg_get_logged_in_user_guid()
-));
-
-foreach ($answers as &$answer) {
-    $desc = $answer['description'];
-    $content .= elgg_echo($desc);
-}
-
-unset($answer);
-
-$answers = elgg_get_entities(array(
-    'type' => 'object',
-    'subtype' => 'guiding_question_2',
-    'owner_guid' => elgg_get_logged_in_user_guid()
-));
-
-foreach ($answers as &$answer) {
-    $desc = $answer['description'];
-    $content .= elgg_echo($desc);
-}
-
-unset($answer);
-
-$answers = elgg_get_entities(array(
-    'type' => 'object',
-    'subtype' => 'guiding_question_3',
-    'owner_guid' => elgg_get_logged_in_user_guid()
-));
-
-foreach ($answers as &$answer) {
-    $desc = $answer['description'];
-    $content .= elgg_echo($desc);
-}
-
-unset($answer);
-
-$answers = elgg_get_entities(array(
-    'type' => 'object',
-    'subtype' => 'guiding_question_4',
-    'owner_guid' => elgg_get_logged_in_user_guid()
-));
-
-foreach ($answers as &$answer) {
-    $desc = $answer['description'];
-    $content .= elgg_echo($desc);
-}
-
-unset($answer);
-
-$answers = elgg_get_entities(array(
-    'type' => 'object',
-    'subtype' => 'guiding_question_5',
-    'owner_guid' => elgg_get_logged_in_user_guid()
-));
-
-foreach ($answers as &$answer) {
-    $desc = $answer['description'];
-    $content .= elgg_echo($desc);
-}
-
-unset($answer);
 
 $answers = elgg_get_entities(array(
     'type' => 'object',
