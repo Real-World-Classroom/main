@@ -14,7 +14,8 @@ $content = elgg_view_title($title);
 $content .= elgg_view_form("guiding_questions/save");
 
 // optionally, add the content for the sidebar
-$sidebar = "";
+$sidebar = elgg_echo('<ul class="elgg-menu elgg-menu-page elgg-menu-page-default">
+		<li><a href="/realworldclassroom/guiding_questions/view">All Past Answers</a></li></ul>');
 
 // layout the page
 $body = elgg_view_layout('one_sidebar', array(
