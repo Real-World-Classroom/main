@@ -21,21 +21,24 @@
  */
 ?>
 
-
 .row1{
 background-color:#50A6C2;
+display:none;
 }
 
 .row2{
 background-color:#0054a7;
+display:none;
 }
 
 .row3{
 background-color:#71b9f7;
+display:none;
 }
 
 .row4{
 background-color:#4690d6;
+display:none;
 }
 
 .gridbox{
@@ -49,16 +52,13 @@ height:480px;
 #header{
 margin-top:25px;
 width:100%;
-height:120px;
+height:80px;
 }
 
 .video_object{
-margin-top: 10%;
 width:100%;
-height:80%;
+height:100%;
 }
-
-
 
 .editorBox{
 float:left;
@@ -96,4 +96,10 @@ clear:both;
 
 #editorHeader{
 margin-top:50px;
+}
+
+.video_frame{
+width:66%;
+height:480px;
+margin:auto;
 }
