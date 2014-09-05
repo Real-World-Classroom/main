@@ -14,13 +14,15 @@ echo'
 			 <h4 class="textCentered">Continue to the rest of the site <a href="http://54.187.111.184/realworldclassroom/activity/">here</a></h4><br>
 			 <h4 class="textCentered"><a href="http://54.187.111.184/realworldclassroom/activity/">Welcome Page Editor</a></h4>
 			 </div>
-						
+				
 			 <div id="box1-1" class="row1 gridbox">
-			 <p>Filler text for now</p>
+			 <p><font size="5"><br><br>A short introduction to the Real World Classroom!</font></p>
 			 </div>
 					
 			 <div id="box1-2" class="row1 gridbox">
-			 <p>Filler text for now</p>
+			 	<object class="video_object"
+			 		data="http://www.youtube.com/v/a7CD3FS7kZ0">
+			 	</object>
 			 </div>
 						
 			 <div id="box1-3" class="row1 gridbox">
@@ -36,11 +38,13 @@ echo'
 			 </div>
 							 
 			 <div id="box2-2" class="row2 gridbox">
-			 <p>Filler text for now</p>
+			 <p><font size="5"><br><br>How can the Real World Classroom help you?</font></p>
 			 </div>
 								 
 			 <div id="box2-3" class="row2 gridbox">
-			 <p>Filler text for now</p>
+			 	<object class="video_object"
+			 		data="http://www.youtube.com/v/WhXPXSMpl7Q">
+			 	</object>
 			 </div>
 						 
 			 <div id="box2-4" class="row2 gridbox">

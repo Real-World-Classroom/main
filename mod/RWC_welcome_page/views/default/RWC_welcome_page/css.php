@@ -52,7 +52,11 @@ width:100%;
 height:120px;
 }
 
-
+.video_object{
+margin-top: 10%;
+width:100%;
+height:80%;
+}
 
 
 
