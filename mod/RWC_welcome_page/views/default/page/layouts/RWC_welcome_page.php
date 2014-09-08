@@ -1,7 +1,8 @@
 <?php
 
-$site_title = "Your Roadmap - A Living App";
-$site_title_short = "Your Roadmap";
+$site = elgg_get_site_entity();
+$site_name = $site->name;
+$site_desc = $site->description;
 
 echo'
 <html>
@@ -11,7 +12,7 @@ echo'
 
 		<div id="frame"> 
 			 <div id="header">
-			 <h1 id="welcomeHeader" class="textCentered">Welcome to ', "$site_title", '!</h1>
+			 <h1 id="welcomeHeader" class="textCentered">Welcome to ', "$site_name - $site_desc", '!</h1>
 			 <br>
 			 <h4 class="textCentered">Continue to the rest of the site <a href="http://54.187.111.184/realworldclassroom/activity/">here</a></h4><br>
 			 </div>
@@ -29,7 +30,7 @@ echo'
 			 <br><br>
 
 			 <h3 class="textCentered">
-			 	How can ', "$site_title_short", ' help you?
+			 	How can ', "$site_name", ' help you?
 			 </h3>
 			 <br>
 			 <div class="video_frame">
