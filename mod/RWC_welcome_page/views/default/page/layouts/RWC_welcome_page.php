@@ -12,7 +12,10 @@ echo'
 
 		<div id="frame"> 
 			 <div id="header">
-			 <h1 id="welcomeHeader" class="textCentered">Welcome to ', "$site_name - $site_desc", '!</h1>
+			 <h1 id="welcomeHeader" class="textCentered">Welcome to ';
+if (strlen($site_desc) == 0) echo "$site_name";
+else echo "$site_name - $site_desc";		  
+echo         '!</h1>
 			 <br>
 			 <h4 class="textCentered">Continue to the rest of the site <a href="http://54.187.111.184/realworldclassroom/activity/">here</a></h4><br>
 			 </div>
