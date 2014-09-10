@@ -23,22 +23,18 @@
 
 .row1{
 background-color:#50A6C2;
-display:none;
 }
 
 .row2{
 background-color:#0054a7;
-display:none;
 }
 
 .row3{
 background-color:#71b9f7;
-display:none;
 }
 
 .row4{
 background-color:#4690d6;
-display:none;
 }
 
 .gridbox{
@@ -99,7 +95,8 @@ margin-top:50px;
 }
 
 .video_frame{
-width:66%;
-height:480px;
-margin:auto;
+width:48%;
+height:450px;
+margin: 0 1% 7% 1%;
+float:left;
 }

@@ -1,42 +1,42 @@
 <?php
-
 $site = elgg_get_site_entity();
-$site_name = $site->name;
 $site_desc = $site->description;
+?>
 
-echo'
 <html>
 	<head>
 	</head>
 	<body>
+		<div id="frame">
 
-		<div id="frame"> 
 			 <div id="header">
-			 <h1 id="welcomeHeader" class="textCentered">Welcome to ';
-if (strlen($site_desc) == 0) echo "$site_name";
-else echo "$site_name - $site_desc";		  
-echo         '!</h1>
-			 <br>
-			 <h4 class="textCentered">Continue to the rest of the site <a href="http://54.187.111.184/realworldclassroom/activity/">here</a></h4><br>
+			 	<h1 id="welcomeHeader" class="textCentered">
+			 		Welcome to  <?php echo "$site_desc"; ?>!
+			 	</h1>
+			 	<br>
+			 	<div class="textCentered">
+			 		<a class="elgg-button elgg-button-submit" href="http://54.187.111.184/realworldclassroom/activity/">
+			 			Get Started
+			 		</a>
+			 	</div>
+			 	<br>
 			 </div>
 
-			 <h3 class="textCentered">
-			 	A short introduction...
-			 </h3>
-			 <br>
 			 <div class="video_frame">
+			 	<h3 class="textCentered">
+			 		A short introduction...
+			 	</h3>
+			 	<br>
 			 	<object class="video_object"
 			 		data="http://www.youtube.com/v/a7CD3FS7kZ0">
 			 	</object>
 			 </div>
 
-			 <br><br>
-
-			 <h3 class="textCentered">
-			 	How can ', "$site_name", ' help you?
-			 </h3>
-			 <br>
 			 <div class="video_frame">
+			 	<h3 class="textCentered">
+			 		How can this site help you?
+			 	</h3>
+				<br>
 			 	<object class="video_object"
 			 		data="http://www.youtube.com/v/WhXPXSMpl7Q">
 			 	</object>
@@ -44,7 +44,7 @@ echo         '!</h1>
 
 			 <br><br>
 
-			 <div id="box1-1" class="row1 gridbox">
+			 <!-- <div id="box1-1" class="row1 gridbox">
 			 <p><font size="5"><br><br>A short introduction to the Real World Classroom!</font></p>
 			 </div>
 
@@ -110,9 +110,9 @@ echo         '!</h1>
 
 			 <div id="box4-4" class="row4 gridbox">
 			 <p>Filler text for now</p>
-			 </div>
+			 </div> -->
 
-		</div>
+		</div> <!-- ends <div id="frame"> -->
 
 	</body>
-</html>';
+</html>
