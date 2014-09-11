@@ -15,7 +15,7 @@ $site_desc = $site->description;
 			 	</h1>
 			 	<br>
 			 	<div class="textCentered">
-			 		<a class="elgg-button elgg-button-submit" href="http://54.187.111.184/realworldclassroom/activity/">
+			 		<a class="elgg-button elgg-button-submit" href="http://54.187.111.184/realworldclassroom/walkthrough/welcome">
 			 			Get Started
 			 		</a>
 			 	</div>
