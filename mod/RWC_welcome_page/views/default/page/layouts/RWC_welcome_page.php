@@ -1,6 +1,7 @@
 <?php
 $site = elgg_get_site_entity();
 $site_desc = $site->description;
+$site_url = elgg_get_site_url();
 ?>
 
 <html>
@@ -15,9 +16,11 @@ $site_desc = $site->description;
 			 	</h1>
 			 	<br>
 			 	<div class="textCentered">
-			 		<a class="elgg-button elgg-button-submit" href="http://54.187.111.184/realworldclassroom/walkthrough/welcome">
-			 			Get Started
-			 		</a>
+			 		<?php echo '
+			 			<a class="elgg-button elgg-button-submit" href="' . "$site_url" . 'walkthrough/welcome">
+			 				Get Started
+			 			</a>'; 
+			 		?>
 			 	</div>
 			 	<br>
 			 </div>

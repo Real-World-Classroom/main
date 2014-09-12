@@ -1,3 +1,7 @@
+<?php
+$site_url = elgg_get_site_url();
+?>
+
 <div style="font: italic bold 20px Georgia, serif;text-align:center;margin-top:15px;margin-bottom:25px;">
 	Welcome to our pilot app!
 </div>
@@ -7,7 +11,7 @@
 </div>
 <div style="font: 16px Georgia, serif;text-align:center;line-height:1.5;margin-bottom:15px">
 	We invite you to 
-		<?php if (!elgg_is_logged_in()) { echo'<a href="http://54.187.111.184/realworldclassroom/register">sign up</a>'; }
+		<?php if (!elgg_is_logged_in()) { echo'<a href="' . "$site_url" . 'register">sign up</a>'; }
 		else { echo'sign up'; } ?> and take a look around, and hope you will
 	<br>let us know of any problems or suggestions by using the feedback tab.
 </div>
@@ -20,7 +24,9 @@
 	<br>we hope you find it useful and have fun!
 </div>
 <div>
-	<a class="elgg-button elgg-button-submit" href="http://54.187.111.184/realworldclassroom/walkthrough/logging_on" style="float:right;margin:10px;font-size:20px;">
-		Next
-	</a>
+	<?php echo '
+		<a class="elgg-button elgg-button-submit" href="' . "$site_url" . 'walkthrough/logging_on" style="float:right;margin:10px;font-size:20px;">
+			Next
+		</a>'; 
+	?>
 </div>
