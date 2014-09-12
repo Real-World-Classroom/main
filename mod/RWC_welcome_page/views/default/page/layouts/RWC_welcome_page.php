@@ -30,9 +30,9 @@ $site_url = elgg_get_site_url();
 			 		A short introduction...
 			 	</h3>
 			 	<br>
-			 	<object class="video_object"
-			 		data="http://www.youtube.com/v/a7CD3FS7kZ0">
-			 	</object>
+			 	<iframe class="video_object"
+			 		src="http://www.youtube.com/embed/a7CD3FS7kZ0?html5=1">
+			 	</iframe>
 			 </div>
 
 			 <div class="video_frame">
@@ -40,9 +40,9 @@ $site_url = elgg_get_site_url();
 			 		How can this site help you?
 			 	</h3>
 				<br>
-			 	<object class="video_object"
-			 		data="http://www.youtube.com/v/WhXPXSMpl7Q">
-			 	</object>
+			 	<iframe class="video_object"
+			 		src="http://www.youtube.com/embed/WhXPXSMpl7Q?html5=1">
+			 	</iframe>
 			 </div>
 
 			 <br><br>
