@@ -15,22 +15,22 @@ else {$sign_up = elgg_echo('sign up');}
 
 // fill remainder of column with welcome info
 $content .= elgg_echo('
-	<div style="font: italic bold 20px Georgia, serif;text-align:center;margin-top:15px;margin-bottom:25px;">
+	<div style="font: italic bold 20px Georgia, serif;text-align:center;margin: 25px 0;">
 		Welcome to our pilot app!
 	</div>
-	<div style="font: 16px Georgia, serif;text-align:center;line-height:1.5;margin-bottom:15px;">
+	<div style="font: 16px Georgia, serif;text-align:center;line-height:2.0;margin-bottom:15px;">
 		This is a networking site geared towards students, faculty, and alumni of SUNY Ulster,
 		<br>as well as for potential employers or other involved members of the community.
 	</div>
-	<div style="font: 16px Georgia, serif;text-align:center;line-height:1.5;margin-bottom:15px;">
+	<div style="font: 16px Georgia, serif;text-align:center;line-height:2.0;margin-bottom:15px;">
 		We invite you to ' . "$sign_up" . ' and take a look around, and hope you will
 		<br>let us know of any problems or suggestions by using the feedback tab.
 	</div>
-	<div style="font: 16px Georgia, serif;text-align:center;line-height:1.5;margin-bottom:15px;">
+	<div style="font: 16px Georgia, serif;text-align:center;line-height:2.0;margin-bottom:15px;">
 		The rest of this tutorial steps through the basics of using various functions of the site,
 		<br>feel free to browse through it or just jump in and start trying things out.
 	</div>
-	<div style="font: 16px Georgia, serif;text-align:center;line-height:1.5;margin-bottom:15px;">
+	<div style="font: 16px Georgia, serif;text-align:center;line-height:2.0;margin-bottom:8%;">
 		Thanks for your participation in this pilot program,
 		<br>we hope you find it useful and have fun!
 	</div>
