@@ -6,8 +6,22 @@ $title = "How to View/Customize Your Profile";
 // start building the main column of the page with the title
 $content = elgg_view_title($title);
 
-// add the walkthrough welcome form beneath
-$content .= elgg_view_form("walkthrough/profile_form");
+// grab site url
+$site_url = elgg_get_site_url();
+
+// fill remainder of column with profile info
+$content .= elgg_echo('
+	<div style="font: 16px Georgia, serif;text-align:center;line-height:1.5;margin-bottom:15px;">
+		Under construction...
+	</div>
+	<div style="position:absolute;bottom:0;width:90%;padding: 0 0 10px 35px;">
+		<a class="elgg-button elgg-button-submit" href="' . "$site_url" . 'walkthrough/logging_on" style="float:left;margin:10px;font-size:20px;">
+			Back
+		</a>
+		<a class="elgg-button elgg-button-submit" href="' . "$site_url" . 'walkthrough/portfolio" style="float:right;margin:10px;font-size:20px;">
+			Next
+		</a>
+	</div>');
 
 // add navigation links for the sidebar
 $sidebar = elgg_echo('<ul class="elgg-menu elgg-menu-page elgg-menu-page-default">
