@@ -127,6 +127,14 @@ li.custom_fields_edit_profile_category {
 	width: 450px;
 }
 
+#profile_manager_register_left > fieldset:nth-child(2) {
+	margin-top: 15px;
+}
+
+select#custom_profile_fields_custom_profile_type.elgg-input-dropdown {
+	margin: 5px 0;
+}
+
 #profile_manager_register_right {
 	float: right;
 	width: 450px;
