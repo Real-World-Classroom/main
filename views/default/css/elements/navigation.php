@@ -157,9 +157,11 @@
 	height: 20px;
 }
 
-.elgg-menu-topbar > li > a.elgg-topbar-avatar {
-	width: 18px;
-	height: 18px;
+.elgg-menu-topbar > li > a.elgg-topbar-avatar > img.elgg-border-plain.elgg-transition {
+	vertical-align: middle;
+	position: relative;
+	bottom: 1px;
+	right: 2px;
 }
 
 /* ***************************************

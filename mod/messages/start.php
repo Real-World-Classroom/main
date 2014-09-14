@@ -144,6 +144,9 @@ function messages_notifier() {
 			$tooltip .= " (" . elgg_echo("messages:unreadcount", array($num_messages)) . ")";
 		}
 
+		// *custom* - add text label to messages menu item in topbar
+		$text .= "Inbox";
+
 		elgg_register_menu_item('topbar', array(
 			'name' => 'messages',
 			'href' => 'messages/inbox/' . elgg_get_logged_in_user_entity()->username,

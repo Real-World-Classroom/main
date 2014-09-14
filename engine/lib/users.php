@@ -1515,7 +1515,7 @@ function users_pagesetup() {
 				'alt' => $viewer->name,
 				'title' => elgg_echo('profile'),
 				'class' => 'elgg-border-plain elgg-transition',
-			)),
+			)) . elgg_echo("Profile"),
 			'priority' => 100,
 			'link_class' => 'elgg-topbar-avatar',
 		));
@@ -1523,7 +1523,7 @@ function users_pagesetup() {
 		elgg_register_menu_item('topbar', array(
 			'name' => 'friends',
 			'href' => "friends/{$viewer->username}",
-			'text' => elgg_view_icon('users'),
+			'text' => elgg_view_icon('users') . elgg_echo("Friends"),
 			'title' => elgg_echo('friends'),
 			'priority' => 300,
 		));
