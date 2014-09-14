@@ -24,11 +24,10 @@
 	margin: 10px;
 	font-size: 20px;
 }
-.walkthrough-active-menu-item {
-	pointer-events: none;
-	cursor: default;
-	background-color: #A7C8E9;
-	color: dimgrey;
+a.walkthrough-active-menu-item,
+a.walkthrough-active-menu-item:hover {
+	background-color: #4690D6;
+	color: white;
 }
 
 /*------------------------------------------*/
