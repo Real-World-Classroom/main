@@ -1,16 +1,22 @@
 <?php
 
+// register walkthrough mod initializer
 elgg_register_event_handler('init', 'system', 'walkthrough_init');
 
 function walkthrough_init() {
+
+    // extend system CSS with our own styles
+    elgg_extend_view('css/elgg', 'walkthrough/css');
+
+    // register walkthrough pages
     elgg_register_page_handler('walkthrough', 'walkthrough_page_handler');
 }
 
 function walkthrough_page_handler($segments) {
     switch ($segments[0]) {
 
-        case 'logging_on':
-           include elgg_get_plugins_path() . 'walkthrough/pages/walkthrough/logging_on.php';
+        case 'logging_in':
+           include elgg_get_plugins_path() . 'walkthrough/pages/walkthrough/logging_in.php';
            break;
         case 'profile': 
            include elgg_get_plugins_path() . 'walkthrough/pages/walkthrough/profile.php';

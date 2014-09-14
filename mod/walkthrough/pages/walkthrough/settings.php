@@ -14,24 +14,24 @@ $content .= elgg_echo('
 	<div style="font: 16px Georgia, serif;text-align:center;line-height:1.5;margin-bottom:15px;">
 		Under construction...
 	</div>
-	<div style="position:absolute;bottom:0;width:90%;padding: 0 0 10px 35px;">
-		<a class="elgg-button elgg-button-submit" href="' . "$site_url" . 'walkthrough/more" style="float:left;margin:10px;font-size:20px;">
-			Back
+	<div class="walkthrough-footer">
+		<a class="elgg-button elgg-button-submit walkthrough-footer-left-button" 
+			href="' . "$site_url" . 'walkthrough/more">Back
 		</a>
-		<a class="elgg-button elgg-button-submit" href="' . "$site_url" . 'walkthrough/feedback" style="float:right;margin:10px;font-size:20px;">
-			Next
+		<a class="elgg-button elgg-button-submit walkthrough-footer-right-button" 
+			href="' . "$site_url" . 'walkthrough/feedback">Next
 		</a>
 	</div>');
 
 // add navigation links for the sidebar
 $sidebar = elgg_echo('<ul class="elgg-menu elgg-menu-page elgg-menu-page-default">
-		<li><a href="/realworldclassroom/walkthrough/logging_on">Sign Up & Log On</a></li>
+		<li><a href="/realworldclassroom/walkthrough/logging_in">Sign Up & Log In</a></li>
 		<li><a href="/realworldclassroom/walkthrough/profile">View/Customize Your Profile</a></li>
 		<li><a href="/realworldclassroom/walkthrough/portfolio">Upload/Share Your Portfolio</a></li>
 		<li><a href="/realworldclassroom/walkthrough/guiding_questions">Answer Guiding Questions</a></li>
 		<li><a href="/realworldclassroom/walkthrough/friends">Find & Add Friends</a></li>
 		<li><a href="/realworldclassroom/walkthrough/more">Add Bookmarks, Videos & More</a></li>
-		<li><a style="pointer-events:none;cursor:default;background-color:#A7C8E9;color:dimgrey;" 
+		<li><a class="walkthrough-active-menu-item" 
 				href="/realworldclassroom/walkthrough/settings">Change Your User Settings</a></li>
 		<li><a href="/realworldclassroom/walkthrough/feedback">Supply Valuable Feedback</a></li></ul>');
 

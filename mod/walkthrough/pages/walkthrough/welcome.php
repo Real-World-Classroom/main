@@ -15,34 +15,34 @@ else {$sign_up = elgg_echo('sign up');}
 
 // fill remainder of column with welcome info
 $content .= elgg_echo('
-	<div style="font: italic bold 20px Georgia, serif;text-align:center;margin: 25px 0;">
+	<div id="first-welcome-div">
 		Welcome to our pilot app!
 	</div>
-	<div style="font: 16px Georgia, serif;text-align:center;line-height:2.0;margin-bottom:15px;">
+	<div class="walkthrough-text walkthrough-welcome-body">
 		This is a networking site geared towards students, faculty, and alumni of SUNY Ulster,
 		<br>as well as for potential employers or other involved members of the community.
 	</div>
-	<div style="font: 16px Georgia, serif;text-align:center;line-height:2.0;margin-bottom:15px;">
+	<div class="walkthrough-text walkthrough-welcome-body">
 		We invite you to ' . "$sign_up" . ' and take a look around, and hope you will
 		<br>let us know of any problems or suggestions by using the feedback tab.
 	</div>
-	<div style="font: 16px Georgia, serif;text-align:center;line-height:2.0;margin-bottom:15px;">
+	<div class="walkthrough-text walkthrough-welcome-body">
 		The rest of this tutorial steps through the basics of using various functions of the site,
 		<br>feel free to browse through it or just jump in and start trying things out.
 	</div>
-	<div style="font: 16px Georgia, serif;text-align:center;line-height:2.0;margin-bottom:8%;">
+	<div id="last-welcome-div" class="walkthrough-text">
 		Thanks for your participation in this pilot program,
 		<br>we hope you find it useful and have fun!
 	</div>
-	<div style="position:absolute;bottom:0;width:90%;padding: 0 0 10px 35px;">
-		<a class="elgg-button elgg-button-submit" href="' . "$site_url" . 'walkthrough/logging_on" style="float:right;margin:10px;font-size:20px;">
-			Next
+	<div class="walkthrough-footer">
+		<a class="elgg-button elgg-button-submit walkthrough-footer-right-button" 
+			href="' . "$site_url" . 'walkthrough/logging_in">Next
 		</a>
 	</div>');
 
 // add navigation links for the sidebar
 $sidebar = elgg_echo('<ul class="elgg-menu elgg-menu-page elgg-menu-page-default">
-		<li><a href="/realworldclassroom/walkthrough/logging_on">Sign Up & Log On</a></li>
+		<li><a href="/realworldclassroom/walkthrough/logging_in">Sign Up & Log In</a></li>
 		<li><a href="/realworldclassroom/walkthrough/profile">View/Customize Your Profile</a></li>
 		<li><a href="/realworldclassroom/walkthrough/portfolio">Upload/Share Your Portfolio</a></li>
 		<li><a href="/realworldclassroom/walkthrough/guiding_questions">Answer Guiding Questions</a></li>
