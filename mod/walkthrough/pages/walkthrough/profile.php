@@ -9,10 +9,49 @@ $content = elgg_view_title($title);
 // grab site url
 $site_url = elgg_get_site_url();
 
+// store paths to pictures
+$pic1_src = "/realworldclassroom/mod/walkthrough/images/elgg_topbar_profile.png";
+$pic2_src = "/realworldclassroom/mod/walkthrough/images/profile_page.png";
+$pic3_src = "/realworldclassroom/mod/walkthrough/images/edit_avatar_button.png";
+$pic4_src = "/realworldclassroom/mod/walkthrough/images/edit_profile_button.png";
+$pic5_src = "/realworldclassroom/mod/walkthrough/images/triangle_button.png";
+$pic6_src = "/realworldclassroom/mod/walkthrough/images/x_button.png";
+$pic7_src = "/realworldclassroom/mod/walkthrough/images/add_widgets_button.png";
+
 // fill remainder of column with profile info
 $content .= elgg_echo('
-	<div style="font: 16px Georgia, serif;text-align:center;line-height:1.5;margin-bottom:15px;">
-		Under construction...
+	<div id="first-profile-div">
+		<div id="profile-pic1-container">
+			<img id="profile-pic1" src="' . "$pic1_src" . '" alt="Profile Link">
+		</div>
+	</div>
+	<div id="profile-div2" class="walkthrough-text">
+		After logging in, you\'ll notice an additional black navigation bar at the top of the page.
+		<br>To view and edit your profile, click the "Profile" link on the lefthand side of this new navbar.
+		<br>If you haven\'t done anything yet, your profile page should look something like the image below:
+	</div>
+	<img id="profile-pic2" src="' . "$pic2_src" . '" alt="Profile Page">
+	<div id="profile-div3">
+		You can click the 
+			<img id="profile-pic3" src="' . "$pic3_src" . '" alt="Edit Avatar Button"> 
+		button underneath the user icon in the top-left corner<br>to upload a new user photo, or you can click the 
+			<img id="profile-pic4" src="' . "$pic4_src" . '" alt="Edit Profile Button"> 
+		button to share<br><br><span style="position:relative;bottom:5px;">
+		additional information about yourself or change your profile type if desired.</span>
+	</div>
+	<div id="profile-div4" class="walkthrough-text">
+		The profile page also comes stocked with several widgets that you may find useful,
+		<br>denoted by the various labeled boxes you see on the bottom and right-hand sides.
+	</div>
+	<div id="last-profile-div">
+		All widgets come enabled by default, but you can either minimize them by clicking the <br>
+			<img id="profile-pic5" src="' . "$pic5_src" . '" alt="Minimize Button"> 
+		in the left corner of the widget, or delete them by clicking the 
+			<img id="profile-pic6" src="' . "$pic6_src" . '" alt="Delete Button"> 
+		in the right corner.
+		<br>You can also add them back at any time by clicking the 
+			<img id="profile-pic7" src="' . "$pic7_src" . '" alt="Add Widgets Button"> 
+		button at top-right of the page.
 	</div>
 	<div class="walkthrough-footer">
 		<a class="elgg-button elgg-button-submit walkthrough-footer-left-button" 

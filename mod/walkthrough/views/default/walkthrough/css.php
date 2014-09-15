@@ -39,7 +39,7 @@ a.walkthrough-active-menu-item:hover {
 	text-align: center;
 	margin: 25px 0;
 }
-.walkthrough-welcome-body {
+.welcome-body-div {
 	margin-bottom: 15px;
 }
 #last-welcome-div {
@@ -86,6 +86,63 @@ a.walkthrough-active-menu-item:hover {
 /*------------------------------------------*/
 
 /* profile page */
+
+#first-profile-div {
+	margin: 30px 0 15px 0;
+	width: 100%;
+}
+#profile-div2 {
+	margin-bottom: 5px;
+}
+#profile-div3 {
+	font: 16px Georgia, serif;
+	text-align: center;
+}
+#profile-div4 {
+	margin: 20px 0 10px 0;
+}
+#last-profile-div {
+	font: 16px Georgia, serif;
+	text-align: center;
+	margin: 25px 0 70px 0;
+}
+#profile-pic1-container {
+	width: 60%;
+	margin: auto;
+}
+#profile-pic1 {
+	width: 100%;
+}
+#profile-pic2 {
+	width: 90%;
+	margin: 5px 0 10px 5%;
+}
+#profile-pic3 {
+	width: 15%;
+	position: relative;
+	top: 8px;
+}
+#profile-pic4 {
+	width: 15%;
+	position: relative;
+	top: 8px;
+}
+#profile-pic5 {
+	width: 4%;
+	position: relative;
+	top: 8px;
+}
+#profile-pic6 {
+	width: 4%;
+	position: relative;
+	top: 8px;
+}
+#profile-pic7 {
+	width: 15%;
+	position: relative;
+	top: 8px;
+	margin: 2px 0;
+}
 
 /*------------------------------------------*/
 

@@ -18,15 +18,15 @@ $content .= elgg_echo('
 	<div id="first-welcome-div">
 		Welcome to our pilot app!
 	</div>
-	<div class="walkthrough-text walkthrough-welcome-body">
+	<div class="walkthrough-text welcome-body-div">
 		This is a networking site geared towards students, faculty, and alumni of SUNY Ulster,
 		<br>as well as for potential employers or other involved members of the community.
 	</div>
-	<div class="walkthrough-text walkthrough-welcome-body">
+	<div class="walkthrough-text welcome-body-div">
 		We invite you to ' . "$sign_up" . ' and take a look around, and hope you will
 		<br>let us know of any problems or suggestions by using the feedback tab.
 	</div>
-	<div class="walkthrough-text walkthrough-welcome-body">
+	<div class="walkthrough-text welcome-body-div">
 		The rest of this tutorial steps through the basics of using various functions of the site,
 		<br>feel free to browse through it or just jump in and start trying things out.
 	</div>
