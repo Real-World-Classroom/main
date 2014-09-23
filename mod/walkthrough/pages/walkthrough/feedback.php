@@ -16,24 +16,24 @@ $content .= elgg_echo('
 	</div>
 	<div class="walkthrough-footer">
 		<a class="elgg-button elgg-button-submit walkthrough-footer-left-button" 
-			href="' . "$site_url" . 'walkthrough/settings">Back
+			href="' . "$site_url" . 'walkthrough/logging_in">Back
 		</a>
 		<a class="elgg-button elgg-button-submit walkthrough-footer-right-button" 
-			href="' . "$site_url" . '">Home
+			href="' . "$site_url" . 'walkthrough/profile">Next
 		</a>
 	</div>');
 
 // add navigation links for the sidebar
 $sidebar = elgg_echo('<ul class="elgg-menu elgg-menu-page elgg-menu-page-default">
 		<li><a href="/realworldclassroom/walkthrough/logging_in">Sign Up & Log In</a></li>
+		<li><a class="walkthrough-active-menu-item" 
+				href="/realworldclassroom/walkthrough/feedback">Supply Valuable Feedback</a></li>
 		<li><a href="/realworldclassroom/walkthrough/profile">View/Customize Your Profile</a></li>
 		<li><a href="/realworldclassroom/walkthrough/portfolio">Upload/Share Your Portfolio</a></li>
 		<li><a href="/realworldclassroom/walkthrough/guiding_questions">Answer Guiding Questions</a></li>
-		<li><a href="/realworldclassroom/walkthrough/friends">Find & Add Friends</a></li>
+		<li><a href="/realworldclassroom/walkthrough/friends">Find Friends or Join Groups</a></li>
 		<li><a href="/realworldclassroom/walkthrough/more">Add Bookmarks, Videos & More</a></li>
-		<li><a href="/realworldclassroom/walkthrough/settings">Change Your User Settings</a></li>
-		<li><a class="walkthrough-active-menu-item" 
-				href="/realworldclassroom/walkthrough/feedback">Supply Valuable Feedback</a></li></ul>');
+		<li><a href="/realworldclassroom/walkthrough/settings">Change Your User Settings</a></li></ul>');
 
 // layout the page
 $body = elgg_view_layout('one_sidebar', array(
