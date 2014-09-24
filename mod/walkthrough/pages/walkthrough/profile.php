@@ -41,7 +41,7 @@ $content .= elgg_echo('
 	</div>
 	<div id="profile-div4" class="walkthrough-text">
 		The profile page also comes stocked with several widgets that you may find useful,
-		<br>denoted by the various labeled boxes you see on the bottom and right-hand sides.
+		<br>denoted by the various labeled boxes you see on the bottom and righthand sides.
 	</div>
 	<div id="last-profile-div">
 		All widgets come enabled by default, but you can either minimize them by clicking the <br>

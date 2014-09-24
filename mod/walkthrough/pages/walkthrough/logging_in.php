@@ -13,7 +13,7 @@ $site_url = elgg_get_site_url();
 $pic1_src = "/realworldclassroom/mod/walkthrough/images/login_button.png";
 $pic2_src = "/realworldclassroom/mod/walkthrough/images/login_screen.png";
 
-// fill remainder of column with logon info
+// fill remainder of column with login info
 $content .= elgg_echo('
 	<div id="first-login-div">
 		To register for a new account or log in to a pre-existing account,<br>look for a button like this 

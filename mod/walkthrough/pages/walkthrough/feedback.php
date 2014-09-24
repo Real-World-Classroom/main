@@ -9,10 +9,33 @@ $content = elgg_view_title($title);
 // grab site url
 $site_url = elgg_get_site_url();
 
+// store paths to pictures
+$pic1_src = "/realworldclassroom/mod/walkthrough/images/feedback_tab.png";
+$pic2_src = "/realworldclassroom/mod/walkthrough/images/feedback_window.png";
+
 // fill remainder of column with feedback info
 $content .= elgg_echo('
-	<div style="font: 16px Georgia, serif;text-align:center;line-height:1.5;margin-bottom:15px;">
-		Under construction...
+	<img id="feedback-pic1" src="' . "$pic1_src" . '" alt="Feedback Tab">
+	<div id="first-feedback-div" class="walkthrough-text">
+		The feedback tab is available on the far lefthand side of any page, and the more often it 
+		gets used the more it helps us, so whenever you have something to say please let us know!<br>
+		You don\'t have to be logged in to use it, so visitors are welcome to share their thoughts too.
+	</div>
+	<div id="feedback-div2" class="walkthrough-text">
+		Click the tab and a window like this will pop up beside it.<br>
+		Select the right categories to fit your feedback message,<br>
+		and if you\'re a visitor you can optionally give a name or email.
+		(If logged in it automatically gets populated with your info.)
+	</div>
+	<img id="feedback-pic2" src="' . "$pic2_src" . '" alt="Feedback Window">
+	<div id="feedback-div3" class="walkthrough-text">
+		Then just fill in the lower box with your feedback message,
+		and hit send. If it\'s a bug report, try to be as descriptive
+		as possible so we can recreate the issue and pinpoint the source.
+	</div>
+	<div id="last-feedback-div" class="walkthrough-text">
+		This project is only just getting started, and as our first users you have the unique ability 
+		to help shape this site as it grows. We hope you enjoy the experience and look forward to hearing from you!
 	</div>
 	<div class="walkthrough-footer">
 		<a class="elgg-button elgg-button-submit walkthrough-footer-left-button" 

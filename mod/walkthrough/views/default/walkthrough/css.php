@@ -85,6 +85,44 @@ a.walkthrough-active-menu-item:hover {
 
 /*------------------------------------------*/
 
+/* feedback page */
+
+#first-feedback-div {
+	margin: 30px 20px 0 0;
+	width: 90%;
+	float: right;
+}
+#feedback-div2 {
+	margin-top: 15px;
+	width: 60%;
+	clear: both;
+	float: left;
+}
+#feedback-div3 {
+	margin-top: 15px;
+	width: 60%;
+	float: left;
+}
+#last-feedback-div {
+	margin-bottom: 65px;
+	padding-top: 10px;
+	clear: both;
+}
+#feedback-pic1 {
+	height: 125px;
+	float: left;
+	margin: 15px 0 0 15px;
+}
+#feedback-pic2 {
+	margin-right: 15px;
+	height: 275px;
+	float: right;
+	position: relative;
+	bottom: 5px;
+}
+
+/*------------------------------------------*/
+
 /* profile page */
 
 #first-profile-div {
