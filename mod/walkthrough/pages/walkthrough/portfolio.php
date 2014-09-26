@@ -1,7 +1,7 @@
 <?php
 
 // set the title
-$title = "How to Upload/Share Your Portfolio";
+$title = "How to View/Upload to Your Portfolio";
 
 // start building the main column of the page with the title
 $content = elgg_view_title($title);
@@ -29,7 +29,7 @@ $sidebar = elgg_echo('<ul class="elgg-menu elgg-menu-page elgg-menu-page-default
 		<li><a href="/realworldclassroom/walkthrough/feedback">Supply Valuable Feedback</a></li>
 		<li><a href="/realworldclassroom/walkthrough/profile">View/Customize Your Profile</a></li>
 		<li><a class="walkthrough-active-menu-item" 
-				href="/realworldclassroom/walkthrough/portfolio">Upload/Share Your Portfolio</a></li>
+				href="/realworldclassroom/walkthrough/portfolio">View/Upload to Your Portfolio</a></li>
 		<li><a href="/realworldclassroom/walkthrough/guiding_questions">Answer Guiding Questions</a></li>
 		<li><a href="/realworldclassroom/walkthrough/friends">Find Friends or Join Groups</a></li>
 		<li><a href="/realworldclassroom/walkthrough/more">Add Bookmarks, Videos & More</a></li>

@@ -20,19 +20,19 @@ $content .= elgg_echo('
 	</div>
 	<div class="walkthrough-text welcome-body-div">
 		This is a networking site geared towards students, faculty, and alumni of SUNY Ulster,
-		<br>as well as for potential employers or other involved members of the community.
+		as well as for potential employers or other involved members of the community.
 	</div>
 	<div class="walkthrough-text welcome-body-div">
 		We invite you to ' . "$sign_up" . ' and take a look around, and hope you will
-		<br>let us know of any problems or suggestions by using the feedback tab.
+		let us know of any problems or suggestions by using the feedback tab, located on the left.
 	</div>
 	<div class="walkthrough-text welcome-body-div">
 		The rest of this tutorial steps through the basics of using various functions of the site,
-		<br>feel free to browse through it or just jump in and start trying things out.
+		feel free to browse through it or just jump right in and start trying things out.
 	</div>
 	<div id="last-welcome-div" class="walkthrough-text">
 		Thanks for your participation in this pilot program,
-		<br>we hope you find it useful and have fun!
+		we hope you find it useful and have fun!
 	</div>
 	<div class="walkthrough-footer">
 		<a class="elgg-button elgg-button-submit walkthrough-footer-right-button" 
@@ -45,7 +45,7 @@ $sidebar = elgg_echo('<ul class="elgg-menu elgg-menu-page elgg-menu-page-default
 		<li><a href="/realworldclassroom/walkthrough/logging_in">Sign Up & Log In</a></li>
 		<li><a href="/realworldclassroom/walkthrough/feedback">Supply Valuable Feedback</a></li>
 		<li><a href="/realworldclassroom/walkthrough/profile">View/Customize Your Profile</a></li>
-		<li><a href="/realworldclassroom/walkthrough/portfolio">Upload/Share Your Portfolio</a></li>
+		<li><a href="/realworldclassroom/walkthrough/portfolio">View/Upload to Your Portfolio</a></li>
 		<li><a href="/realworldclassroom/walkthrough/guiding_questions">Answer Guiding Questions</a></li>
 		<li><a href="/realworldclassroom/walkthrough/friends">Find Friends or Join Groups</a></li>
 		<li><a href="/realworldclassroom/walkthrough/more">Add Bookmarks, Videos & More</a></li>

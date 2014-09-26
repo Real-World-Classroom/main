@@ -28,7 +28,7 @@ $sidebar = elgg_echo('<ul class="elgg-menu elgg-menu-page elgg-menu-page-default
 		<li><a href="/realworldclassroom/walkthrough/logging_in">Sign Up & Log In</a></li>
 		<li><a href="/realworldclassroom/walkthrough/feedback">Supply Valuable Feedback</a></li>
 		<li><a href="/realworldclassroom/walkthrough/profile">View/Customize Your Profile</a></li>
-		<li><a href="/realworldclassroom/walkthrough/portfolio">Upload/Share Your Portfolio</a></li>
+		<li><a href="/realworldclassroom/walkthrough/portfolio">View/Upload to Your Portfolio</a></li>
 		<li><a href="/realworldclassroom/walkthrough/guiding_questions">Answer Guiding Questions</a></li>
 		<li><a class="walkthrough-active-menu-item" 
 				href="/realworldclassroom/walkthrough/friends">Find Friends or Join Groups</a></li>

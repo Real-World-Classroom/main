@@ -18,12 +18,12 @@ $content .= elgg_echo('
 	<img id="feedback-pic1" src="' . "$pic1_src" . '" alt="Feedback Tab">
 	<div id="first-feedback-div" class="walkthrough-text">
 		The feedback tab is available on the far lefthand side of any page, and the more often it 
-		gets used the more it helps us, so whenever you have something to say please let us know!<br>
+		gets used the more it helps us, so whenever you have something to say please let us know! 
 		You don\'t have to be logged in to use it, so visitors are welcome to share their thoughts too.
 	</div>
 	<div id="feedback-div2" class="walkthrough-text">
-		Click the tab and a window like this will pop up beside it.<br>
-		Select the right categories to fit your feedback message,<br>
+		Click the tab and a window like this will pop up beside it. 
+		Select the right categories to fit your feedback message, 
 		and if you\'re a visitor you can optionally give a name or email.
 		(If logged in it automatically gets populated with your info.)
 	</div>
@@ -52,7 +52,7 @@ $sidebar = elgg_echo('<ul class="elgg-menu elgg-menu-page elgg-menu-page-default
 		<li><a class="walkthrough-active-menu-item" 
 				href="/realworldclassroom/walkthrough/feedback">Supply Valuable Feedback</a></li>
 		<li><a href="/realworldclassroom/walkthrough/profile">View/Customize Your Profile</a></li>
-		<li><a href="/realworldclassroom/walkthrough/portfolio">Upload/Share Your Portfolio</a></li>
+		<li><a href="/realworldclassroom/walkthrough/portfolio">View/Upload to Your Portfolio</a></li>
 		<li><a href="/realworldclassroom/walkthrough/guiding_questions">Answer Guiding Questions</a></li>
 		<li><a href="/realworldclassroom/walkthrough/friends">Find Friends or Join Groups</a></li>
 		<li><a href="/realworldclassroom/walkthrough/more">Add Bookmarks, Videos & More</a></li>

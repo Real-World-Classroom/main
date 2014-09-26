@@ -4,8 +4,8 @@
 /* global */
 
 .walkthrough-text {
-	font: 16px Georgia, serif;
-	text-align: center;
+	font: 16px "Lucida Grande", Arial, Tahoma, Verdana, sans-serif;
+	text-align: justify;
 	line-height: 2.0;
 }
 .walkthrough-footer {
@@ -35,15 +35,16 @@ a.walkthrough-active-menu-item:hover {
 /* welcome page */
 
 #first-welcome-div {
-	font: italic bold 20px Georgia, serif;
+	font: italic bold 20px "Lucida Grande", Arial, Tahoma, Verdana, sans-serif;
 	text-align: center;
-	margin: 25px 0;
+	margin: 20px 0 30px 0;
 }
 .welcome-body-div {
 	margin-bottom: 15px;
+	width: 98%
 }
 #last-welcome-div {
-	margin-bottom:8%;
+	margin-bottom:9%;
 }
 
 /*------------------------------------------*/
@@ -51,9 +52,10 @@ a.walkthrough-active-menu-item:hover {
 /* logging_in page */
 
 #first-login-div {
-	font: 16px Georgia, serif;
-	text-align: center;
+	font: 16px "Lucida Grande", Arial, Tahoma, Verdana, sans-serif;
+	text-align: justify;
 	margin: 30px 0 15px 0;
+	width: 97%;
 }
 #login-pic1 {
 	width: 10%;
@@ -62,8 +64,8 @@ a.walkthrough-active-menu-item:hover {
 	margin: 0 10px;
 }
 #login-div2 {
-	margin: 2% 0 15px 10%;
-	width: 55%;
+	margin: 2% 0 15px 0;
+	width: 62%;
 	float: left;
 }
 #login-div2 > div:first-child {
@@ -88,19 +90,19 @@ a.walkthrough-active-menu-item:hover {
 /* feedback page */
 
 #first-feedback-div {
-	margin: 30px 20px 0 0;
+	margin: 25px 20px 0 0;
 	width: 90%;
 	float: right;
 }
 #feedback-div2 {
 	margin-top: 15px;
-	width: 60%;
+	width: 52%;
 	clear: both;
 	float: left;
 }
 #feedback-div3 {
 	margin-top: 15px;
-	width: 60%;
+	width: 52%;
 	float: left;
 }
 #last-feedback-div {
@@ -111,11 +113,11 @@ a.walkthrough-active-menu-item:hover {
 #feedback-pic1 {
 	height: 125px;
 	float: left;
-	margin: 15px 0 0 15px;
+	margin: 25px 0 0 15px;
 }
 #feedback-pic2 {
 	margin-right: 15px;
-	height: 275px;
+	height: 325px;
 	float: right;
 	position: relative;
 	bottom: 5px;
@@ -133,16 +135,16 @@ a.walkthrough-active-menu-item:hover {
 	margin-bottom: 5px;
 }
 #profile-div3 {
-	font: 16px Georgia, serif;
-	text-align: center;
+	font: 16px "Lucida Grande", Arial, Tahoma, Verdana, sans-serif;
+	text-align: justify;
 }
 #profile-div4 {
 	margin: 20px 0 10px 0;
 }
 #last-profile-div {
-	font: 16px Georgia, serif;
-	text-align: center;
-	margin: 25px 0 70px 0;
+	font: 16px "Lucida Grande", Arial, Tahoma, Verdana, sans-serif;
+	text-align: justify;
+	margin-bottom: 70px;
 }
 #profile-pic1-container {
 	width: 60%;
@@ -153,7 +155,7 @@ a.walkthrough-active-menu-item:hover {
 }
 #profile-pic2 {
 	width: 90%;
-	margin: 5px 0 10px 5%;
+	margin: 10px 0 15px 5%;
 }
 #profile-pic3 {
 	width: 15%;
