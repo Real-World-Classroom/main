@@ -188,6 +188,54 @@ a.walkthrough-active-menu-item:hover {
 
 /* portfolio page */
 
+#first-portfolio-div {
+	margin: 30px 0 15px 0;
+	width: 97%;
+}
+#portfolio-div2 {
+	margin: 5px 23px 0 0;
+	width: 58%;
+	float: right;
+}
+#portfolio-div3 {
+	padding-top: 10px;
+	width: 97%;
+	clear: both;
+}
+#last-portfolio-div {
+	margin: 15px 0px 65px 0;
+	width: 66%;
+	float: left;
+}
+#portfolio-pic1 {
+	width: 10%;
+	position: relative;
+	top: 4px;
+	margin: 0 3px;
+}
+#portfolio-pic2 {
+	height: 125px;
+	float: left;
+	margin-top: 11px;
+}
+#portfolio-pic3 {
+	width: 10%;
+	position: relative;
+	top: 4px;
+	margin: 0 3px;
+}
+#portfolio-pic4 {
+	width: 15%;
+	position: relative;
+	top: 8px;
+	margin: 2px 0;
+}
+#portfolio-pic5 {
+	height: 140px;
+	float: right;
+	margin: 40px 15px 0 0;
+}
+
 /*------------------------------------------*/
 
 /* guiding_questions page */
