@@ -28,7 +28,7 @@ $content .= elgg_echo('
 	<img id="portfolio-pic2" src="' . "$pic2_src" . '" alt="Portfolio Page">
 	<div id="portfolio-div2" class="walkthrough-text">
 		Along the top-left portion of this page you\'ll see three tabs you can use to navigate between viewing 
-		all submissions, your own, or your friends\'. Click the 
+		all site submissions, your own portfolio, or your friends\' portfolios. Click the 
 		<img id="portfolio-pic3" src="' . "$pic3_src" . '" alt="Mine Tab"> 
 		tab to view your portfolio.
 	</div>
@@ -37,7 +37,7 @@ $content .= elgg_echo('
 		to find the contents of this tab</span> pretty empty (and boring). To liven things up, use the 
 			<img id="portfolio-pic4" src="' . "$pic4_src" . '" alt="Upload Button"> 
 		button in the top-right corner to start building your portfolio. This will bring you to an upload page 
-		where you can select any file you want to upload from your computer, and then give it a title, 
+		where you can select any file you want to upload from your computer, then give it a title, 
 		description, and even tags if you like.
 	</div>
 	<div id="last-portfolio-div" class="walkthrough-text">

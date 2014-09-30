@@ -193,7 +193,7 @@ a.walkthrough-active-menu-item:hover {
 	width: 97%;
 }
 #portfolio-div2 {
-	margin: 5px 23px 0 0;
+	margin: 7px 23px 0 0;
 	width: 58%;
 	float: right;
 }
@@ -203,7 +203,7 @@ a.walkthrough-active-menu-item:hover {
 	clear: both;
 }
 #last-portfolio-div {
-	margin: 15px 0px 65px 0;
+	margin: 23px 0px 65px 0;
 	width: 66%;
 	float: left;
 }
@@ -233,12 +233,72 @@ a.walkthrough-active-menu-item:hover {
 #portfolio-pic5 {
 	height: 140px;
 	float: right;
-	margin: 40px 15px 0 0;
+	margin: 50px 15px 0 0;
 }
 
 /*------------------------------------------*/
 
 /* guiding_questions page */
+
+#first-guiding-questions-div {
+	margin: 30px 0 15px 0;
+	width: 97%;
+}
+#guiding-questions-div2 {
+	margin-bottom: 20px;
+	width: 97%;
+}
+#guiding-questions-div3 {
+	margin-bottom: 20px;
+	width: 97%;
+}
+#guiding-questions-div4 {
+	margin: 0 20px 20px 0;
+	width: 65%;
+	float: right;
+}
+#last-guiding-questions-div {
+	margin-bottom: 65px;
+	width: 69%;
+	clear: both;
+	float: left;
+}
+#guiding-questions-pic1 {
+	width: 20%;
+	position: relative;
+	top: 4px;
+	margin: 0 3px;
+}
+#guiding-questions-pic2 {
+	width: 20%;
+	position: relative;
+	top: 8px;
+	margin: 2px 0;
+}
+#guiding-questions-pic3 {
+	width: 30%;
+	position: relative;
+	top: 3px;
+}
+#guiding-questions-pic4 {
+	margin: 0 0 -3px -3px;
+	width: 30%;
+	float: left;
+	position: relative;
+	bottom: 5px;
+}
+#guiding-questions-pic5 {
+	margin-left: -3px;
+	width: 30%;
+	float: left;
+	position: relative;
+	bottom: 5px;
+}
+#guiding-questions-pic6 {
+	margin: 5px 20px 0 0;
+	width: 25%;
+	float: right;
+}
 
 /*------------------------------------------*/
 
