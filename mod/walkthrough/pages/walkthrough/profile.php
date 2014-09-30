@@ -28,7 +28,7 @@ $content .= elgg_echo('
 	<div id="profile-div2" class="walkthrough-text">
 		If you\'re logged in, you\'ll notice an additional black navigation bar at the top of the page. 
 		To view and edit your profile, click the "Profile" link on the lefthand side of this new navbar. 
-		If you haven\'t done anything yet, your profile page should look something like the image here:
+		If you haven\'t done anything yet, your profile page should look something like the image below:
 	</div>
 	<img id="profile-pic2" src="' . "$pic2_src" . '" alt="Profile Page">
 	<div id="profile-div3">
@@ -51,7 +51,7 @@ $content .= elgg_echo('
 			<img id="profile-pic6" src="' . "$pic6_src" . '" alt="Delete Button"> 
 		in the right corner. You can also add them back at any time by clicking the 
 			<img id="profile-pic7" src="' . "$pic7_src" . '" alt="Add Widgets Button"> 
-		button at top-right of the page.
+		button in the top-right <span style="position:relative;top:15px;">corner of the page.<span>
 	</div>
 	<div class="walkthrough-footer">
 		<a class="elgg-button elgg-button-submit walkthrough-footer-left-button" 

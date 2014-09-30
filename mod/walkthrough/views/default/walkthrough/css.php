@@ -62,6 +62,8 @@ a.walkthrough-active-menu-item:hover {
 	position: relative;
 	top: 8px;
 	margin: 0 10px;
+	border: 1px solid white;
+	border-radius: 5px;
 }
 #login-div2 {
 	margin: 2% 0 15px 0;
@@ -81,7 +83,7 @@ a.walkthrough-active-menu-item:hover {
 }
 #last-login-div {
 	margin: 1% 0 9% 0;
-	width: 100%;
+	width: 97%;
 	display: inline-block;
 }
 
@@ -109,6 +111,7 @@ a.walkthrough-active-menu-item:hover {
 	margin-bottom: 65px;
 	padding-top: 10px;
 	clear: both;
+	width: 97%;
 }
 #feedback-pic1 {
 	height: 125px;
@@ -132,26 +135,32 @@ a.walkthrough-active-menu-item:hover {
 	width: 100%;
 }
 #profile-div2 {
-	margin-bottom: 5px;
+	margin-bottom: -15px;
+	width: 97%
 }
 #profile-div3 {
 	font: 16px "Lucida Grande", Arial, Tahoma, Verdana, sans-serif;
 	text-align: justify;
+	width: 97%
 }
 #profile-div4 {
 	margin: 20px 0 10px 0;
+	width: 97%
 }
 #last-profile-div {
 	font: 16px "Lucida Grande", Arial, Tahoma, Verdana, sans-serif;
 	text-align: justify;
-	margin-bottom: 70px;
+	margin-bottom: 85px;
+	width: 97%
 }
 #profile-pic1-container {
-	width: 60%;
+	width: 70%;
 	margin: auto;
 }
 #profile-pic1 {
 	width: 100%;
+	position: relative;
+	bottom: 5px;
 }
 #profile-pic2 {
 	width: 90%;
@@ -171,11 +180,15 @@ a.walkthrough-active-menu-item:hover {
 	width: 4%;
 	position: relative;
 	top: 8px;
+	border: 1px solid white;
+	border-radius: 5px;
 }
 #profile-pic6 {
 	width: 4%;
 	position: relative;
 	top: 8px;
+	border: 1px solid white;
+	border-radius: 5px;
 }
 #profile-pic7 {
 	width: 15%;
@@ -212,11 +225,15 @@ a.walkthrough-active-menu-item:hover {
 	position: relative;
 	top: 4px;
 	margin: 0 3px;
+	border: 1px solid grey;
+	border-radius: 5px;
 }
 #portfolio-pic2 {
 	height: 125px;
 	float: left;
-	margin-top: 11px;
+	margin-top: 9px;
+	border: 2px solid lightgrey;
+	border-radius: 5px;
 }
 #portfolio-pic3 {
 	width: 10%;
@@ -234,6 +251,8 @@ a.walkthrough-active-menu-item:hover {
 	height: 140px;
 	float: right;
 	margin: 50px 15px 0 0;
+	border: 2px solid lightgrey;
+	border-radius: 5px;
 }
 
 /*------------------------------------------*/
@@ -268,6 +287,8 @@ a.walkthrough-active-menu-item:hover {
 	position: relative;
 	top: 4px;
 	margin: 0 3px;
+	border: 1px solid grey;
+	border-radius: 5px;
 }
 #guiding-questions-pic2 {
 	width: 20%;
@@ -295,9 +316,11 @@ a.walkthrough-active-menu-item:hover {
 	bottom: 5px;
 }
 #guiding-questions-pic6 {
-	margin: 5px 20px 0 0;
+	margin-right: 20px;
 	width: 25%;
 	float: right;
+	border: 2px solid lightgrey;
+	border-radius: 5px;
 }
 
 /*------------------------------------------*/
@@ -311,6 +334,49 @@ a.walkthrough-active-menu-item:hover {
 /*------------------------------------------*/
 
 /* settings page */
+
+#first-settings-div {
+	margin: 30px 0 15px 0;
+	width: 100%;
+}
+#settings-div2 {
+	margin-bottom: 5px;
+	width: 97%;
+}
+#settings-div3 {
+	margin: 15px 0 15px 0;
+	width: 59%;
+	float: left;
+}
+#last-settings-div {
+	margin-bottom: 95px;
+	clear: both;
+	width: 97%;
+	position: relative;
+	top: 30px;
+}
+#settings-pic1-container {
+	width: 36%;
+	margin: auto;
+}
+#settings-pic1 {
+	width: 100%;
+	position: relative;
+	bottom: 5px;
+}
+#settings-pic2 {
+	margin: 10px 15px 0 0;
+	width: 35%;
+	float: right;
+	border: 2px solid lightgrey;
+	border-radius: 5px;
+}
+#settings-pic3 {
+	width: 59%;
+	float: left;
+	border: 2px solid lightgrey;
+	border-radius: 5px;
+}
 
 /*------------------------------------------*/
 

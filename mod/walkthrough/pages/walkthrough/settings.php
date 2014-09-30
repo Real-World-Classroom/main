@@ -9,10 +9,33 @@ $content = elgg_view_title($title);
 // grab site url
 $site_url = elgg_get_site_url();
 
+// store paths to pictures
+$pic1_src = "/realworldclassroom/mod/walkthrough/images/elgg_topbar_settings.png";
+$pic2_src = "/realworldclassroom/mod/walkthrough/images/notifications_link.png";
+$pic3_src = "/realworldclassroom/mod/walkthrough/images/personal_notifications_setting.png";
+
 // fill remainder of column with settings info
 $content .= elgg_echo('
-	<div style="font: 16px Georgia, serif;text-align:center;line-height:1.5;margin-bottom:15px;">
-		Under construction...
+	<div id="first-settings-div">
+		<div id="settings-pic1-container">
+			<img id="settings-pic1" src="' . "$pic1_src" . '" alt="Settings Link">
+		</div>
+	</div>
+	<div id="settings-div2" class="walkthrough-text">
+		Last but not least, additional user preferences can be accessed through the 
+		Settings link on the righthand side of the top black navbar. Here you can change 
+		your display name, password, and email address if desired.
+	</div>
+	<img id="settings-pic2" src="' . "$pic2_src" . '" alt="Notifications Link">
+	<div id="settings-div3" class="walkthrough-text">
+		You can also change your notification settings by clicking the notifications link in the sidebar on the right. 
+		(Again, we\'re sorry that email notifications are not working at this time, we hope to fix it soon.)
+	</div>
+	<img id="settings-pic3" src="' . "$pic3_src" . '" alt="Personal Notifications Setting">
+	<div id="last-settings-div" class="walkthrough-text">
+		That\'s it for this tutorial, we hope it may have answered some of your questions. 
+		Be sure to let us know through the feedback tab if there\'s anything else you\'d like to 
+		see added to it, thanks again and enjoy perusing the site! :)
 	</div>
 	<div class="walkthrough-footer">
 		<a class="elgg-button elgg-button-submit walkthrough-footer-left-button" 
