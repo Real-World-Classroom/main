@@ -33,8 +33,8 @@ $content .= elgg_echo('
 		tab to view your portfolio.
 	</div>
 	<div id="portfolio-div3" class="walkthrough-text">
-		<span style="position:relative;top:10px;">Unless you\'ve already submitted something, you can expect 
-		to find the contents of this tab</span> pretty empty (and boring). To liven things up, use the 
+		Unless you\'ve already submitted something, you can expect to find the contents of this tab pretty empty 
+		(and boring). To liven things up, use the 
 			<img id="portfolio-pic4" src="' . "$pic4_src" . '" alt="Upload Button"> 
 		button in the top-right corner to start building your portfolio. This will bring you to an upload page 
 		where you can select any file you want to upload from your computer, then give it a title, 

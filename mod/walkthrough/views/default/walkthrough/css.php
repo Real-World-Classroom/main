@@ -4,7 +4,7 @@
 /* global */
 
 .walkthrough-text {
-	font: 16px "Lucida Grande", Arial, Tahoma, Verdana, sans-serif;
+	font: 125% "Lucida Grande", Arial, Tahoma, Verdana, sans-serif;
 	text-align: justify;
 	line-height: 2.0;
 }
@@ -12,17 +12,17 @@
 	position: absolute;
 	bottom: 0;
 	width: 90%;
-	padding: 0 0 10px 35px;
+	padding: 0 0 1% 5%;
 }
 .walkthrough-footer-left-button {
 	float: left;
-	margin: 10px;
-	font-size: 20px;
+	margin: 1%;
+	font-size: 156%;
 }
 .walkthrough-footer-right-button {
 	float: right;
-	margin: 10px;
-	font-size: 20px;
+	margin: 1%;
+	font-size: 156%;
 }
 a.walkthrough-active-menu-item,
 a.walkthrough-active-menu-item:hover {
@@ -35,16 +35,16 @@ a.walkthrough-active-menu-item:hover {
 /* welcome page */
 
 #first-welcome-div {
-	font: italic bold 20px "Lucida Grande", Arial, Tahoma, Verdana, sans-serif;
+	font: italic bold 156% "Lucida Grande", Arial, Tahoma, Verdana, sans-serif;
 	text-align: center;
-	margin: 20px 0 30px 0;
+	margin: 3% 0 4% 0;
 }
 .welcome-body-div {
-	margin-bottom: 15px;
+	margin-bottom: 3%;
 	width: 98%
 }
 #last-welcome-div {
-	margin-bottom:9%;
+	margin-bottom: 9%;
 }
 
 /*------------------------------------------*/
@@ -52,21 +52,11 @@ a.walkthrough-active-menu-item:hover {
 /* logging_in page */
 
 #first-login-div {
-	font: 16px "Lucida Grande", Arial, Tahoma, Verdana, sans-serif;
-	text-align: justify;
-	margin: 30px 0 15px 0;
+	margin: 4% 0 1% 0;
 	width: 97%;
 }
-#login-pic1 {
-	width: 10%;
-	position: relative;
-	top: 8px;
-	margin: 0 10px;
-	border: 1px solid white;
-	border-radius: 5px;
-}
 #login-div2 {
-	margin: 2% 0 15px 0;
+	margin: 2% 0;
 	width: 62%;
 	float: left;
 }
@@ -78,13 +68,21 @@ a.walkthrough-active-menu-item:hover {
 	float: right;
 	margin-right: 3%;
 }
-#login-pic2 {
-	width: 100%;
-}
 #last-login-div {
 	margin: 1% 0 9% 0;
 	width: 97%;
 	display: inline-block;
+}
+#login-pic1 {
+	width: 10%;
+	position: relative;
+	top: 7px;
+	margin: -1% 1% 0 1%;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+#login-pic2 {
+	width: 100%;
 }
 
 /*------------------------------------------*/
@@ -92,38 +90,37 @@ a.walkthrough-active-menu-item:hover {
 /* feedback page */
 
 #first-feedback-div {
-	margin: 25px 20px 0 0;
+	margin: 4% 3% 0 0;
 	width: 90%;
 	float: right;
 }
 #feedback-div2 {
-	margin-top: 15px;
+	margin-top: 3%;
 	width: 52%;
 	clear: both;
 	float: left;
 }
 #feedback-div3 {
-	margin-top: 15px;
+	margin: 3% 0;
 	width: 52%;
 	float: left;
 }
 #last-feedback-div {
-	margin-bottom: 65px;
-	padding-top: 10px;
+	margin-bottom: 9%;
 	clear: both;
 	width: 97%;
 }
 #feedback-pic1 {
-	height: 125px;
+	width: 3%;
 	float: left;
-	margin: 25px 0 0 15px;
+	margin: 3% 0 0 2%;
 }
 #feedback-pic2 {
-	margin-right: 15px;
-	height: 325px;
+	margin-right: 2%;
+	width: 42%;
 	float: right;
 	position: relative;
-	bottom: 5px;
+	top: 7px;
 }
 
 /*------------------------------------------*/
@@ -131,26 +128,21 @@ a.walkthrough-active-menu-item:hover {
 /* profile page */
 
 #first-profile-div {
-	margin: 30px 0 15px 0;
+	margin: 5% 0 2% 0;
 	width: 100%;
 }
 #profile-div2 {
-	margin-bottom: -15px;
 	width: 97%
 }
 #profile-div3 {
-	font: 16px "Lucida Grande", Arial, Tahoma, Verdana, sans-serif;
-	text-align: justify;
 	width: 97%
 }
 #profile-div4 {
-	margin: 20px 0 10px 0;
+	margin: 3% 0 3% 0;
 	width: 97%
 }
 #last-profile-div {
-	font: 16px "Lucida Grande", Arial, Tahoma, Verdana, sans-serif;
-	text-align: justify;
-	margin-bottom: 85px;
+	margin-bottom: 9%;
 	width: 97%
 }
 #profile-pic1-container {
@@ -164,37 +156,35 @@ a.walkthrough-active-menu-item:hover {
 }
 #profile-pic2 {
 	width: 90%;
-	margin: 10px 0 15px 5%;
+	margin: 0 0 3% 3%;
 }
 #profile-pic3 {
 	width: 15%;
-	position: relative;
-	top: 8px;
+	margin-bottom: -1%;
 }
 #profile-pic4 {
 	width: 15%;
 	position: relative;
-	top: 8px;
+	top: 7px;
+	margin-top: -1%;
 }
 #profile-pic5 {
 	width: 4%;
-	position: relative;
-	top: 8px;
 	border: 1px solid white;
 	border-radius: 5px;
+	margin-bottom: -1%;
 }
 #profile-pic6 {
 	width: 4%;
-	position: relative;
-	top: 8px;
 	border: 1px solid white;
 	border-radius: 5px;
+	margin: -1% 0;
 }
 #profile-pic7 {
 	width: 15%;
 	position: relative;
-	top: 8px;
-	margin: 2px 0;
+	top: 7px;
+	margin-top: -1%;
 }
 
 /*------------------------------------------*/
@@ -202,21 +192,21 @@ a.walkthrough-active-menu-item:hover {
 /* portfolio page */
 
 #first-portfolio-div {
-	margin: 30px 0 15px 0;
+	margin: 4% 0 2% 0;
 	width: 97%;
 }
 #portfolio-div2 {
-	margin: 7px 23px 0 0;
+	margin: 1% 3% 0 0;
 	width: 58%;
 	float: right;
 }
 #portfolio-div3 {
-	padding-top: 10px;
+	padding-top: 2%;
 	width: 97%;
 	clear: both;
 }
 #last-portfolio-div {
-	margin: 23px 0px 65px 0;
+	margin: 3% 0 9% 0;
 	width: 66%;
 	float: left;
 }
@@ -224,14 +214,13 @@ a.walkthrough-active-menu-item:hover {
 	width: 10%;
 	position: relative;
 	top: 4px;
-	margin: 0 3px;
 	border: 1px solid grey;
 	border-radius: 5px;
 }
 #portfolio-pic2 {
-	height: 125px;
+	width: 33%;
 	float: left;
-	margin-top: 9px;
+	margin: 1%;
 	border: 2px solid lightgrey;
 	border-radius: 5px;
 }
@@ -239,18 +228,18 @@ a.walkthrough-active-menu-item:hover {
 	width: 10%;
 	position: relative;
 	top: 4px;
-	margin: 0 3px;
+	margin: 0 1%;
 }
 #portfolio-pic4 {
 	width: 15%;
 	position: relative;
-	top: 8px;
-	margin: 2px 0;
+	top: 7px;
+	margin-top: -1%;
 }
 #portfolio-pic5 {
-	height: 140px;
+	width: 27%;
 	float: right;
-	margin: 50px 15px 0 0;
+	margin: 7% 2% 0 0;
 	border: 2px solid lightgrey;
 	border-radius: 5px;
 }
@@ -260,24 +249,24 @@ a.walkthrough-active-menu-item:hover {
 /* guiding_questions page */
 
 #first-guiding-questions-div {
-	margin: 30px 0 15px 0;
+	margin: 4% 0 2% 0;
 	width: 97%;
 }
 #guiding-questions-div2 {
-	margin-bottom: 20px;
+	margin-bottom: 3%;
 	width: 97%;
 }
 #guiding-questions-div3 {
-	margin-bottom: 20px;
+	margin-bottom: 3%;
 	width: 97%;
 }
 #guiding-questions-div4 {
-	margin: 0 20px 20px 0;
+	margin: 0 3% 3% 0;
 	width: 65%;
 	float: right;
 }
 #last-guiding-questions-div {
-	margin-bottom: 65px;
+	margin-bottom: 9%;
 	width: 69%;
 	clear: both;
 	float: left;
@@ -286,37 +275,36 @@ a.walkthrough-active-menu-item:hover {
 	width: 20%;
 	position: relative;
 	top: 4px;
-	margin: 0 3px;
 	border: 1px solid grey;
 	border-radius: 5px;
 }
 #guiding-questions-pic2 {
 	width: 20%;
 	position: relative;
-	top: 8px;
-	margin: 2px 0;
+	top: 7px;
 }
 #guiding-questions-pic3 {
 	width: 30%;
 	position: relative;
-	top: 3px;
+	top: 7px;
+	margin-top: -1%;
 }
 #guiding-questions-pic4 {
-	margin: 0 0 -3px -3px;
+	margin-left: -1%;
 	width: 30%;
 	float: left;
 	position: relative;
 	bottom: 5px;
 }
 #guiding-questions-pic5 {
-	margin-left: -3px;
+	margin-left: -1%;
 	width: 30%;
 	float: left;
 	position: relative;
 	bottom: 5px;
 }
 #guiding-questions-pic6 {
-	margin-right: 20px;
+	margin-right: 3%;
 	width: 25%;
 	float: right;
 	border: 2px solid lightgrey;
@@ -336,24 +324,24 @@ a.walkthrough-active-menu-item:hover {
 /* settings page */
 
 #first-settings-div {
-	margin: 30px 0 15px 0;
+	margin: 5% 0 2% 0;
 	width: 100%;
 }
 #settings-div2 {
-	margin-bottom: 5px;
+	margin-bottom: 1%;
 	width: 97%;
 }
 #settings-div3 {
-	margin: 15px 0 15px 0;
+	margin: 2% 0;
 	width: 59%;
 	float: left;
 }
 #last-settings-div {
-	margin-bottom: 95px;
+	margin-bottom: 9%;
 	clear: both;
 	width: 97%;
 	position: relative;
-	top: 30px;
+	top: 4%;
 }
 #settings-pic1-container {
 	width: 36%;
@@ -365,7 +353,7 @@ a.walkthrough-active-menu-item:hover {
 	bottom: 5px;
 }
 #settings-pic2 {
-	margin: 10px 15px 0 0;
+	margin: 1% 2% 5% 0;
 	width: 35%;
 	float: right;
 	border: 2px solid lightgrey;
@@ -377,7 +365,3 @@ a.walkthrough-active-menu-item:hover {
 	border: 2px solid lightgrey;
 	border-radius: 5px;
 }
-
-/*------------------------------------------*/
-
-/* feedback page */

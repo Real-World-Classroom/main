@@ -28,14 +28,14 @@ $content .= elgg_echo('
 	</div>
 	<img id="settings-pic2" src="' . "$pic2_src" . '" alt="Notifications Link">
 	<div id="settings-div3" class="walkthrough-text">
-		You can also change your notification settings by clicking the notifications link in the sidebar on the right. 
-		(Again, we\'re sorry that email notifications are not working at this time, we hope to fix it soon.)
+		You can change your notification settings by clicking the notifications link in the sidebar on the right. 
+		If desired, it\'s also possible to independently control notifications for specific friends or groups.
 	</div>
 	<img id="settings-pic3" src="' . "$pic3_src" . '" alt="Personal Notifications Setting">
 	<div id="last-settings-div" class="walkthrough-text">
 		That\'s it for this tutorial, we hope it may have answered some of your questions. 
 		Be sure to let us know through the feedback tab if there\'s anything else you\'d like to 
-		see added to it, thanks again and enjoy perusing the site! :)
+		see added to it, thanks again and we hope you enjoy using the site!
 	</div>
 	<div class="walkthrough-footer">
 		<a class="elgg-button elgg-button-submit walkthrough-footer-left-button" 

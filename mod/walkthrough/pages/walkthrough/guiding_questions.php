@@ -35,7 +35,7 @@ $content .= elgg_echo('
 	<div id="guiding-questions-div3" class="walkthrough-text">
 		To view all of your past responses for a specific question, look for the 
 			<img id="guiding-questions-pic3" src="' . "$pic3_src" . '" alt="Past Answers Button"> 
-		<span style="position:relative;bottom:3px;">button found underneath each question on the righthand side.</span>
+		button found underneath each question on the righthand side.
 	</div>
 	<div id="guiding-questions-div4" class="walkthrough-text">
 		You may find it helpful to look back on answers you submitted from a while ago and see how things have 

@@ -15,7 +15,7 @@ $pic2_src = "/realworldclassroom/mod/walkthrough/images/login_screen.png";
 
 // fill remainder of column with login info
 $content .= elgg_echo('
-	<div id="first-login-div">
+	<div id="first-login-div" class="walkthrough-text">
 		To register for a new account or log in to a pre-existing account, look for a button like this 
 			<img id="login-pic1" src="' . "$pic1_src" . '" alt="Login Button"> 
 		in the top-right portion of the site\'s blue banner above.
@@ -33,9 +33,11 @@ $content .= elgg_echo('
 		<img id="login-pic2" src="' . "$pic2_src" . '" alt="Login Screen"> 
 	</div>
 	<div id="last-login-div" class="walkthrough-text">
-		<span style="color:red;">NOTE:</span> We are currently unable to send email validations, and are working to fix the problem. 
-		In the meantime, please send a feedback message after you register that asks us to validate your account. 
-		Our apologies for any inconvenience &nbsp;:(
+		If you ever forget your password, you can use the Lost Password link to request a new one for your account. 
+		You\'ll first receive an email with a link to a password reset page. (Make sure to check your spam folder in case 
+		it accidentally lands there.) Click the button on that page to receive another email with your new password. 
+		You can then log in with this password and change it to whatever you like from the settings page 
+		(see <a href="' . "$site_url" . 'walkthrough/settings">here</a>).
 	</div>
 	<div class="walkthrough-footer">
 		<a class="elgg-button elgg-button-submit walkthrough-footer-left-button" 
