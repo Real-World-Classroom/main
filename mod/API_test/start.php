@@ -60,7 +60,7 @@ function my_post_to_wire($text) {
 }
 
 function test_token_request($username, $password) {
-	$url = 'http://localhost/realworldclassroom/services/api/rest/xml/';
+	$url = 'http://54.187.111.184/realworldclassroom/services/api/rest/xml/';
 	$postData = array();
 	$postData['method'] = 'auth.gettoken';
 	$postData['username'] = $username;
