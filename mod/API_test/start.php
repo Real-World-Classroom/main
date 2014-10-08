@@ -32,10 +32,18 @@ function api_test_init() {
                 "test_token_request",
                  array("username" => array('type' => 'string'),
                  	   "password" => array('type' => 'string')),
-                 'A method to test the auth.gettoken api method',
+                 'A GET form of the auth_gettoken() method in web_services.php',
                  'GET',
                  false,
                  false
+                );
+    expose_function("test.secureaccess",
+                "test_secure_access",
+                 array("string" => array('type' => 'string')),
+                 'A testing method that requires both API and user authentication',
+                 'GET',
+                 true,
+                 true
                 );
 }
 
@@ -60,17 +68,27 @@ function my_post_to_wire($text) {
 }
 
 function test_token_request($username, $password) {
-	$url = 'http://54.187.111.184/realworldclassroom/services/api/rest/xml/';
-	$postData = array();
-	$postData['method'] = 'auth.gettoken';
-	$postData['username'] = $username;
-	$postData['password'] = $password;
-	$ch = curl_init();
-	curl_setopt($ch, CURLOPT_URL, $url);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
-	curl_setopt($ch, CURLOPT_POST, 1);
-	curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
-	$result = curl_exec($ch);
-	curl_close($ch);
-	return $result;
+        // check if username is an email address
+    if (is_email_address($username)) {
+        $users = get_user_by_email($username);
+            
+        // check if we have a unique user
+        if (is_array($users) && (count($users) == 1)) {
+            $username = $users[0]->username;
+        }
+    }
+    
+    // validate username and password
+    if (true === elgg_authenticate($username, $password)) {
+        $token = create_user_token($username);
+        if ($token) {
+            return $token;
+        }
+    }
+
+    throw new SecurityException(elgg_echo('SecurityException:authenticationfailed'));
+}
+
+function test_secure_access($string) {
+    return 'Your string - "' . $string . '" - is now on lockdown.';
 }
