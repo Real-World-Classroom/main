@@ -1,6 +1,6 @@
 <div style="border-bottom: 1px solid #eeeeff; margin-bottom: 40px;"></div>
 <div>
-    <div style="margin: 25px 0 -15px 0;">
+    <div style="margin-top:25px;">
         <label>
             <?php echo elgg_echo("<h3 style='display:inline;'>1.</h3> &nbsp;
                      What do you want right now, more than anything else?"); ?>
@@ -14,7 +14,7 @@
 </div>
 
 <div>
-    <div style="margin: 25px 0 -15px 0;">
+    <div style="margin-top:25px;">
         <label>
             <?php echo elgg_echo("<h3 style='display:inline;'>2.</h3> &nbsp;
                                                 What would it do for you?"); ?>
@@ -28,7 +28,7 @@
 </div>
 
 <div>
-    <div style="margin: 25px 0 -15px 0;">
+    <div style="margin-top:25px;">
         <label>
             <?php echo elgg_echo("<h3 style='display:inline;'>3.</h3> &nbsp;
                                         How would you feel if you got it?"); ?>
@@ -42,7 +42,7 @@
 </div>
 
 <div>
-    <div style="margin: 25px 0 -15px 0;">
+    <div style="margin-top:25px;">
         <label>
             <?php echo elgg_echo("<h3 style='display:inline;'>4.</h3> &nbsp;
                                       How do you want to spend your time?"); ?>
@@ -56,7 +56,7 @@
 </div>
 
 <div>
-    <div style="margin: 25px 0 -15px 0;">
+    <div style="margin-top:25px;">
         <label>
             <?php echo elgg_echo("<h3 style='display:inline;'>5.</h3> &nbsp;
                                              What experience do you want?"); ?>
@@ -70,7 +70,7 @@
 </div>
 
 <div>
-    <div style="margin: 25px 0 -15px 0;">
+    <div style="margin-top:25px;">
         <label>
             <?php echo elgg_echo("<h3 style='display:inline;'>6.</h3> &nbsp;
                               What's your plan for getting what you want?"); ?>
