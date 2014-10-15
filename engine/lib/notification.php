@@ -277,7 +277,7 @@ array $params = NULL) {
 		$from = $site->email;
 	} else {
 		// If all else fails, use the domain of the site.
-		$from = 'noreply@' . get_site_domain($CONFIG->site_guid);
+		$from = 'realworldclassroom.team@' . get_site_domain($CONFIG->site_guid);
 	}
 
 	return elgg_send_email($from, $to, $subject, $message);
