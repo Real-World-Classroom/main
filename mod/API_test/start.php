@@ -45,6 +45,15 @@ function api_test_init() {
                  true,
                  true
                 );
+    expose_function("user.getphoto",
+                "get_user_photo",
+                 array("username" => array('type' => 'string'),
+                       "size" => array('type' => 'string')),
+                 'Returns URL for user\'s photo given a username/email address and an optional size (\'small\' if not provided)',
+                 'GET',
+                 false,
+                 true
+                );
 }
 
 function my_echo($string) {
@@ -91,4 +100,31 @@ function test_token_request($username, $password) {
 
 function test_secure_access($string) {
     return 'Your string - "' . $string . '" - is now on lockdown.';
+}
+
+function get_user_photo($username, $size) {
+        // check if username is an email address
+    if (is_email_address($username)) {
+        $users = get_user_by_email($username);
+            
+        // check if we have a unique user
+        if (is_array($users) && (count($users) == 1)) {
+            $username = $users[0]->username;
+        }
+    }
+    
+    // Get the ElggUser instance from the username
+    $user = get_user_by_username($username);
+
+    // Make sure size is valid
+    if (!in_array($size, array('topbar', 'tiny', 'small', 'medium', 'large', 'master'))) {
+        $size = 'medium';
+    }
+    
+    // If valid user, return a URL for that user's photo in the given size
+    if ($user) {
+        return elgg_format_url($user->getIconURL($size));
+    }
+
+    return false;
 }
