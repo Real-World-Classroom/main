@@ -138,7 +138,7 @@ a.walkthrough-active-menu-item:hover {
 	width: 97%
 }
 #profile-div4 {
-	margin: 3% 0 3% 0;
+	margin: 3% 0;
 	width: 97%
 }
 #last-profile-div {
@@ -314,6 +314,84 @@ a.walkthrough-active-menu-item:hover {
 /*------------------------------------------*/
 
 /* friends page */
+
+#first-friends-div {
+	margin: 5% 0 2% 0;
+	width: 100%;
+}
+#friends-div2 {
+	margin-bottom: 3%;
+	width: 59%;
+	float: left;
+}
+#friends-div3 {
+	clear: both;
+	margin-bottom: 3%;
+	width: 97%
+}
+#friends-div4 {
+	margin-bottom: 3%;
+	width: 97%
+}
+#last-friends-div {
+	margin-bottom: 9%;
+	width: 97%
+}
+#friends-pic1-container {
+	width: 70%;
+	margin: auto;
+}
+#friends-pic1 {
+	width: 100%;
+	position: relative;
+	bottom: 5px;
+}
+#friends-pic2 {
+	width: 35%;
+	float: right;
+	margin: 4% 2% 0 0;
+	border: 2px solid lightgrey;
+	border-radius: 5px;
+}
+#friends-pic3 {
+	width: 12%;
+	position: relative;
+	top: 4px;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+#friends-pic4 {
+	width: 14%;
+	position: relative;
+	top: 7px;
+	margin-top: -1%;
+}
+#friends-pic5 {
+	width: 9%;
+	position: relative;
+	top: 4px;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+#friends-pic6 {
+	width: 15%;
+	position: relative;
+	top: 7px;
+	margin-top: -1%;
+}
+#friends-pic7 {
+	width: 23%;
+	position: relative;
+	top: 7px;
+	margin-top: -1%;
+}
+#friends-pic8 {
+	width: 17%;
+	position: relative;
+	top: 7px;
+	margin-top: -1%;
+}
+
 
 /*------------------------------------------*/
 
