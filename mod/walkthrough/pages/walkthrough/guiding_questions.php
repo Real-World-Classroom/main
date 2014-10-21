@@ -23,7 +23,7 @@ $content .= elgg_echo('
 		The Guiding Questions page is a part of the site that\'s only accessible to logged in users. 
 		First, make sure you\'re logged in, then click the  
 			<img id="guiding-questions-pic1" src="' . "$pic1_src" . '" alt="Guiding Questions Link"> 
-		link within the main blue navbar. Here you will see a series of questions posed to you by the 
+		link within the main blue banner. Here you will see a series of questions posed to you by the 
 		instructor, with text-editor boxes underneath where you can type in your answers.
 	</div>
 	<div id="guiding-questions-div2" class="walkthrough-text">

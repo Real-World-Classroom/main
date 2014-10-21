@@ -19,9 +19,9 @@ $pic5_src = "/realworldclassroom/mod/walkthrough/images/access_privileges.png";
 // fill remainder of column with portfolio info
 $content .= elgg_echo('
 	<div id="first-portfolio-div" class="walkthrough-text">
-		To access your portfolio, first click on the  
+		To access your portfolio, click   
 			<img id="portfolio-pic1" src="' . "$pic1_src" . '" alt="Portfolio Link"> 
-		link within the navbar along the bottom of the site\'s main blue banner. This will bring you to a page 
+		from among the links located along the bottom of the site\'s main blue banner. This will bring you to a page 
 		where you can not only view your own submissions, but also any submissions your friends share with you, 
 		as well as anything made public by other users of the site.
 	</div>

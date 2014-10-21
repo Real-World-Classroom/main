@@ -9,10 +9,41 @@ $content = elgg_view_title($title);
 // grab site url
 $site_url = elgg_get_site_url();
 
+// store paths to pictures
+$pic1_src = "/realworldclassroom/mod/walkthrough/images/more_link.png";
+$pic2_src = "/realworldclassroom/mod/walkthrough/images/more_dropdown_links.png";
+$pic3_src = "/realworldclassroom/mod/walkthrough/images/all_tabs.png";
+$pic4_src = "/realworldclassroom/mod/walkthrough/images/add_bookmark_button.png";
+$pic5_src = "/realworldclassroom/mod/walkthrough/images/add_video_button.png";
+$pic6_src = "/realworldclassroom/mod/walkthrough/images/add_page_button.png";
+$pic7_src = "/realworldclassroom/mod/walkthrough/images/post_button.png";
+
 // fill remainder of column with more info
 $content .= elgg_echo('
-	<div style="font: 16px Georgia, serif;text-align:center;line-height:1.5;margin-bottom:15px;">
-		Under construction...
+	<div id="first-more-div" class="walkthrough-text">
+		There are a few additional capabilities of the site to be found by hovering over the 
+			<img id="more-pic1" src="' . "$pic1_src" . '" alt="More Link"> 
+		link in the main blue banner. Currently these include adding Bookmarks, Videos and Pages, 
+		and the ability to post to a Twitter-like feature called "The Wire".
+	</div>
+	<img id="more-pic2" src="' . "$pic2_src" . '" alt="More Dropdown Links">
+	<div id="more-div2" class="walkthrough-text">
+		As with the Portfolio, use these tabs in the top-left portion of each feature 
+		to filter what you want to view.
+	</div>
+	<img id="more-pic3" src="' . "$pic3_src" . '" alt="All, Mine, Friends Tabs">
+	<div id="last-more-div" class="walkthrough-text">
+		Look for buttons like these: 
+			<img id="more-pic4" src="' . "$pic4_src" . '" alt="Add Bookmark Button"> 
+		/ 
+			<img id="more-pic5" src="' . "$pic5_src" . '" alt="Add Video Button"> 
+		/ 
+			<img id="more-pic6" src="' . "$pic6_src" . '" alt="Add Page Button"> 
+		in the top-right corner of those respective features in order to create a new bookmark, video 
+		or page. Be sure not to forget about the access privileges! To post to The Wire, simply 
+		enter a message 140 characters or less into the text box and click the 
+			<img id="more-pic7" src="' . "$pic7_src" . '" alt="Post Button"> 
+		button below it.
 	</div>
 	<div class="walkthrough-footer">
 		<a class="elgg-button elgg-button-submit walkthrough-footer-left-button" 

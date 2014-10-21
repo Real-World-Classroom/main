@@ -38,7 +38,7 @@ $content .= elgg_echo('
 		profile, which can be done by clicking on their username wherever it might be displayed on the site.
 		For example, you can view a list of all the site\'s members by clicking the 
 			<img id="friends-pic3" src="' . "$pic3_src" . '" alt="Members Link"> 
-		link in the main blue navbar. From here click on any username to go to that person\'s profile, or use 
+		link in the main blue banner. From here click on any username to go to that person\'s profile, or use 
 		the member search functions in the sidebar on the right to find a specific user. Once on a user\'s profile, click the 
 			<img id="friends-pic4" src="' . "$pic4_src" . '" alt="Add Friend Button"> 
 		button underneath their user photo to add them as a friend.
@@ -47,7 +47,7 @@ $content .= elgg_echo('
 		This site also holds the capability for users to form various groups for any number of purposes. 
 		You can view a list of all groups on the site by clicking the 
 			<img id="friends-pic5" src="' . "$pic5_src" . '" alt="Groups Link"> 
-		link in the main blue navbar. Similarly as with members, you can search for specific groups from within the sidebar 
+		link in the main blue banner. Similarly as with members, you can search for specific groups from within the sidebar 
 		on the right, but you can also easily navigate to groups you are part of or have started. To join a group, click on 
 		that group\'s name to go to its homepage, and then click the 
 			<img id="friends-pic6" src="' . "$pic6_src" . '" alt="Join Group Button"> 

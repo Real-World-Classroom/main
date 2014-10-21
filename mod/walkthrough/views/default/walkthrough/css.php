@@ -397,6 +397,66 @@ a.walkthrough-active-menu-item:hover {
 
 /* more page */
 
+#first-more-div {
+	margin: 4% 0 3% 0;
+	width: 69%;
+	float: left;
+}
+#more-div2 {
+	margin: 0 2% 3% 0;
+	width: 62%;
+	clear: both;
+	float: right;
+}
+#last-more-div {
+	margin-bottom: 9%;
+	width: 97%;
+	clear: both;
+}
+#more-pic1 {
+	width: 13%;
+	position: relative;
+	top: 4px;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+#more-pic2 {
+	width: 25%;
+	float: right;
+	margin: 3% 2% 0 0;
+	border: 2px solid lightgrey;
+	border-radius: 5px;
+}
+#more-pic3 {
+	width: 33%;
+	margin-top: 2%;
+	float: left;
+}
+#more-pic4 {
+	width: 21%;
+	position: relative;
+	top: 7px;
+	margin-top: -1%;
+}
+#more-pic5 {
+	width: 14%;
+	position: relative;
+	top: 7px;
+	margin-top: -1%;
+}
+#more-pic6 {
+	width: 15%;
+	position: relative;
+	top: 7px;
+	margin-top: -1%;
+}
+#more-pic7 {
+	width: 7%;
+	position: relative;
+	top: 7px;
+	margin-top: -1%;
+}
+
 /*------------------------------------------*/
 
 /* settings page */
