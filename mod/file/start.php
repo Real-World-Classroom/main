@@ -16,7 +16,7 @@ function file_init() {
 	elgg_register_library('elgg:file', elgg_get_plugins_path() . 'file/lib/file.php');
 
 	// Site navigation
-	$item = new ElggMenuItem('file', elgg_echo('file'), 'file/all');
+	$item = new ElggMenuItem('file', elgg_echo('file'), 'file/redirect');
 	elgg_register_menu_item('site', $item);
 
 	// Extend CSS
@@ -113,6 +113,10 @@ function file_page_handler($page) {
 
 	$page_type = $page[0];
 	switch ($page_type) {
+		case 'redirect':
+			file_register_toggle();
+			include "$file_dir/redirect.php";
+			break;
 		case 'owner':
 			file_register_toggle();
 			include "$file_dir/owner.php";
