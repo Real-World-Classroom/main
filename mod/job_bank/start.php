@@ -44,8 +44,13 @@ function job_bank_init() {
   // add the group job listings tool option
   add_group_tool_option('job_bank', elgg_echo('groups:enablelistings'), true);
 
-  // Register entity type for search
+  // Register entity type
   elgg_register_entity_type('object', 'job_listing');
+
+  // Tell Elgg that object subtype "job_listing" should be loaded using the JobBankPluginFile class
+  // If you ever change the name of the class, use update_subtype() to change it
+  // add_subtype('object', 'job_listing', 'JobBankPluginFile'); // Didn't work since entry was already made in elgg_entity_subtypes db table...
+  update_subtype('object', 'job_listing', 'JobBankPluginFile'); // THIS worked. Thanks for documenting, Elgg! d^^b
 
   // add a job listing link to owner blocks
   elgg_register_plugin_hook_handler('register', 'menu:owner_block', 'job_listing_owner_block_menu');

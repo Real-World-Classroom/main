@@ -38,9 +38,7 @@ if ($simpletype == "image") {
 		$readfile = new ElggFile();
 		$readfile->owner_guid = $job_listing->owner_guid;
 		$readfile->setFilename($thumbfile);
-		if ($job_listing->mimetype) {
-			$mime = $job_listing->mimetype;
-		}
+		$mime = $job_listing->getMimeType();
 		$contents = $readfile->grabFile();
 
 		// caching images for 10 days
