@@ -27,12 +27,16 @@ elgg_push_breadcrumb($title);
 $content = elgg_view_entity($job_listing, array('full_view' => true));
 $content .= elgg_view_comments($job_listing);
 
-elgg_register_menu_item('title', array(
-	'name' => 'download',
-	'text' => elgg_echo('job_bank:download'),
-	'href' => "job_bank/download/$job_listing->guid",
-	'link_class' => 'elgg-button elgg-button-action',
-));
+// Only provide download button if job listing has supplemental file
+$filename = $job_listing->originalfilename;
+if ($filename !== "job_bank_default.png") {
+	elgg_register_menu_item('title', array(
+		'name' => 'download',
+		'text' => elgg_echo('job_bank:download'),
+		'href' => "job_bank/download/$job_listing->guid",
+		'link_class' => 'elgg-button elgg-button-action',
+	));
+}
 
 $body = elgg_view_layout('content', array(
 	'content' => $content,

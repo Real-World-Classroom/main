@@ -9,7 +9,7 @@ $owner = elgg_get_page_owner_entity();
 gatekeeper();
 group_gatekeeper();
 
-$title = elgg_echo('job_bank:add');
+$title = elgg_echo('Post a new job listing');
 
 // set up breadcrumbs
 elgg_push_breadcrumb(elgg_echo('job_bank'), "job_bank/all");

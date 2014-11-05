@@ -4,7 +4,13 @@
  */
 // Get variables
 $title = htmlspecialchars(get_input('title', '', false), ENT_QUOTES, 'UTF-8');
+$employer = get_input("employer");
+$type = get_input("employment_type");
+$salary = get_input("salary");
+$location = get_input("location");
 $desc = get_input("description");
+$qualifications = get_input("qualifications");
+$contact_info = get_input("contact_info");
 $access_id = (int) get_input("access_id");
 $container_guid = (int) get_input('container_guid', 0);
 $guid = (int) get_input('job_listing_guid');
@@ -29,20 +35,22 @@ if ($guid > 0) {
 }
 
 if ($new_job_listing) {
-	// must have a file if a new job listing upload
-	if (empty($_FILES['upload']['name'])) {
-		$error = elgg_echo('job_bank:nofile');
+	// Does NOT need a file for job listings
+	// if (empty($_FILES['upload']['name'])) {
+	// 	$error = elgg_echo('job_bank:nofile');
+	// 	register_error($error);
+	// 	forward(REFERER);
+	// }
+
+	// MUST have a job title now though
+	if (empty($title)) {
+		$error = elgg_echo('job_bank:notitle');
 		register_error($error);
 		forward(REFERER);
 	}
 
 	$job_listing = new JobBankPluginFile();
 	$job_listing->subtype = "job_listing";
-
-	// if no title on new upload, grab filename
-	if (empty($title)) {
-		$title = htmlspecialchars($_FILES['upload']['name'], ENT_QUOTES, 'UTF-8');
-	}
 
 } else {
 	// load original job listing object
@@ -65,12 +73,18 @@ if ($new_job_listing) {
 }
 
 $job_listing->title = $title;
+$job_listing->employer = $employer;
+$job_listing->employment_type = $type;
+$job_listing->salary = $salary;
+$job_listing->location = $location;
 $job_listing->description = $desc;
+$job_listing->qualifications = $qualifications;
+$job_listing->contact_info = $contact_info;
 $job_listing->access_id = $access_id;
 $job_listing->container_guid = $container_guid;
 $job_listing->tags = string_to_tag_array($tags);
 
-// we have a job listing upload, so process it
+// For ALL job listings WITH a supplemental file
 if (isset($_FILES['upload']['name']) && !empty($_FILES['upload']['name'])) {
 
 	$prefix = "job_bank/";
@@ -180,7 +194,72 @@ if (isset($_FILES['upload']['name']) && !empty($_FILES['upload']['name'])) {
 		$thumb->delete();
 		unset($job_listing->largethumb);
 	}
-} else {
+} elseif ($new_job_listing) { // For NEW job listings WITHOUT a supplemental file, a placeholder image will be used
+
+	$prefix = "job_bank/";
+
+	$filestorename = elgg_strtolower(time().$title);
+
+	$job_listing->setFilename($prefix . $filestorename);
+	$mime_type = "image/png";
+
+	$job_listing->setMimeType($mime_type);
+	$job_listing->originalfilename = "job_bank_default.png";
+	$job_listing->simpletype = job_listing_get_simple_type($mime_type);
+
+	// Open the job listing to guarantee the directory exists
+	$job_listing->open("write");
+	$job_listing->close();
+
+	// Since no file was uploaded, copy default image instead
+	$default_img_src = elgg_get_plugins_path() . 'job_bank/images/job_bank_default.png';
+	if (!copy($default_img_src, $job_listing->getFilenameOnFilestore())) {
+		$error = elgg_echo('job_bank:uploadfailed');
+		register_error($error);
+		forward(REFERER);
+	}
+
+	$guid = $job_listing->save();
+
+	// Create thumbnails for default image
+	if ($guid && $job_listing->simpletype == "image") {
+		$job_listing->icontime = time();
+		
+		$thumbnail = get_resized_image_from_existing_file($job_listing->getFilenameOnFilestore(), 60, 60, true);
+		if ($thumbnail) {
+			$thumb = new ElggFile();
+			$thumb->setMimeType($mime_type);
+
+			$thumb->setFilename($prefix."thumb".$filestorename);
+			$thumb->open("write");
+			$thumb->write($thumbnail);
+			$thumb->close();
+
+			$job_listing->thumbnail = $prefix."thumb".$filestorename;
+			unset($thumbnail);
+		}
+
+		$thumbsmall = get_resized_image_from_existing_file($job_listing->getFilenameOnFilestore(), 153, 153, true);
+		if ($thumbsmall) {
+			$thumb->setFilename($prefix."smallthumb".$filestorename);
+			$thumb->open("write");
+			$thumb->write($thumbsmall);
+			$thumb->close();
+			$job_listing->smallthumb = $prefix."smallthumb".$filestorename;
+			unset($thumbsmall);
+		}
+
+		$thumblarge = get_resized_image_from_existing_file($job_listing->getFilenameOnFilestore(), 600, 600, false);
+		if ($thumblarge) {
+			$thumb->setFilename($prefix."largethumb".$filestorename);
+			$thumb->open("write");
+			$thumb->write($thumblarge);
+			$thumb->close();
+			$job_listing->largethumb = $prefix."largethumb".$filestorename;
+			unset($thumblarge);
+		}
+	}
+} else { // For OLD job listings WITHOUT supplemental file
 	// not saving a job listing but still need to save the entity to push attributes to database
 	$job_listing->save();
 }

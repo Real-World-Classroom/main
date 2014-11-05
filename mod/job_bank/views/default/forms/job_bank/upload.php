@@ -4,7 +4,13 @@
  */
 // once elgg_view stops throwing all sorts of junk into $vars, we can use 
 $title = elgg_extract('title', $vars, '');
+$employer = elgg_extract('employer', $vars, '');
+$type = elgg_extract('employment_type', $vars, '');
+$salary = elgg_extract('salary', $vars, '');
+$location = elgg_extract('location', $vars, '');
 $desc = elgg_extract('description', $vars, '');
+$qualifications = elgg_extract('qualifications', $vars, '');
+$contact_info = elgg_extract('contact_info', $vars, '');
 $tags = elgg_extract('tags', $vars, '');
 $access_id = elgg_extract('access_id', $vars, ACCESS_DEFAULT);
 $container_guid = elgg_extract('container_guid', $vars);
@@ -23,16 +29,41 @@ if ($guid) {
 
 ?>
 <div>
-	<label><?php echo $job_listing_label; ?></label><br />
-	<?php echo elgg_view('input/file', array('name' => 'upload')); ?>
-</div>
-<div>
-	<label><?php echo elgg_echo('title'); ?></label><br />
+	<label><?php echo elgg_echo('Job Title'); ?></label><br />
 	<?php echo elgg_view('input/text', array('name' => 'title', 'value' => $title)); ?>
 </div>
 <div>
-	<label><?php echo elgg_echo('description'); ?></label>
+	<label><?php echo elgg_echo('Employer'); ?></label><br />
+	<?php echo elgg_view('input/text', array('name' => 'employer', 'value' => $employer)); ?>
+</div>
+<div>
+	<label><?php echo elgg_echo('Type of Employment'); ?></label><br />
+	<?php echo elgg_view('input/text', array('name' => 'employment_type', 'value' => $type, 
+	'placeholder' => "Full-time, part-time, temporary, freelance, paid or unpaid internship, etc.")); ?>
+</div>
+<div>
+	<label><?php echo elgg_echo('Salary'); ?></label><br />
+	<?php echo elgg_view('input/text', array('name' => 'salary', 'value' => $salary)); ?>
+</div>
+<div>
+	<label><?php echo elgg_echo('Location'); ?></label><br />
+	<?php echo elgg_view('input/text', array('name' => 'location', 'value' => $location)); ?>
+</div>
+<div>
+	<label><?php echo elgg_echo('Job Description'); ?></label>
 	<?php echo elgg_view('input/longtext', array('name' => 'description', 'value' => $desc)); ?>
+</div>
+<div>
+	<label><?php echo elgg_echo('Desired Qualifications'); ?></label><br />
+	<?php echo elgg_view('input/longtext', array('name' => 'qualifications', 'value' => $qualifications)); ?>
+</div>
+<div>
+	<label><?php echo elgg_echo('Contact Information'); ?></label><br />
+	<?php echo elgg_view('input/longtext', array('name' => 'contact_info', 'value' => $contact_info)); ?>
+</div>
+<div>
+	<label><?php echo $job_listing_label; ?></label><br />
+	<?php echo elgg_view('input/file', array('name' => 'upload')); ?>
 </div>
 <div>
 	<label><?php echo elgg_echo('tags'); ?></label>

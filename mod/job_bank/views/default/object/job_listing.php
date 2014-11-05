@@ -72,7 +72,43 @@ if ($full && !elgg_in_context('gallery')) {
 	$params = $params + $vars;
 	$summary = elgg_view('object/elements/summary', $params);
 
-	$text = elgg_view('output/longtext', array('value' => $job_listing->description));
+	$employer = elgg_view('output/text', array('value' => $job_listing->employer));
+	$type = elgg_view('output/text', array('value' => $job_listing->employment_type));
+	$salary = elgg_view('output/text', array('value' => $job_listing->salary));
+	$location = elgg_view('output/text', array('value' => $job_listing->location));
+	$desc = elgg_view('output/longtext', array('value' => $job_listing->description));
+	$qualifications = elgg_view('output/longtext', array('value' => $job_listing->qualifications));
+	$contact_info = elgg_view('output/longtext', array('value' => $job_listing->contact_info));
+
+	$text = "<div class='job-listing-field'>
+				<h3><u>Employer:</u></h3>
+				$employer
+			  </div>
+			  <div class='job-listing-field'>
+				<h3><u>Type of Employment:</u></h3>
+				$type
+			  </div>
+			  <div class='job-listing-field'>
+				<h3><u>Salary:</u></h3>
+				$salary
+			  </div>
+			  <div class='job-listing-field'>
+				<h3><u>Location:</u></h3>
+				$location
+			  </div>
+			  <div class='job-listing-field'>
+				<h3><u>Job Description:</u></h3>
+				$desc
+			  </div>
+			  <div class='job-listing-field'>
+				<h3><u>Desired Qualifications:</u></h3>
+				$qualifications
+			  </div>
+			  <div class='job-listing-field'>
+				<h3><u>Contact Information:</u></h3>
+				$contact_info
+			  </div><br>";
+
 	$body = "$text $extra";
 
 	echo elgg_view('object/elements/full', array(

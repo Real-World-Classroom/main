@@ -19,14 +19,14 @@ $english = array(
 	'job_bank:gallery_list' => "Gallery or list view",
 	'job_bank:num_listings' => "Number of job listings to display",
 	'job_bank:user:gallery'=>'View %s job listings',
-	'job_bank:upload' => "Post a new job listing",
+	'job_bank:upload' => "Post new job listing",
 	'job_bank:replace' => 'Replace job listing content (leave blank to not change job listing)',
 	'job_bank:list:title' => "%s's %s %s",
 	'job_bank:title:friends' => "Friends'",
 
-	'job_bank:add' => 'Post a new job listing',
+	'job_bank:add' => 'Post new job listing',
 
-	'job_bank:job_listing' => "Job Listing Upload",
+	'job_bank:job_listing' => "Supplemental File (optional)",
 	'job_bank:title' => "Title",
 	'job_bank:desc' => "Description",
 	'job_bank:tags' => "Tags",
@@ -61,7 +61,7 @@ $english = array(
 
 	'groups:enablelistings' => 'Enable group job listings',
 
-	'job_bank:download' => "Download this",
+	'job_bank:download' => "Download extra file",
 
 	'job_bank:delete:confirm' => "Are you sure you want to delete this job listing?",
 
@@ -110,6 +110,7 @@ View and comment on the new listing:
 		'job_bank:noaccess' => "You do not have permissions to change this job listing",
 		'job_bank:cannotload' => "There was an error uploading the job listing",
 		'job_bank:nolisting' => "You must select a job listing",
+		'job_bank:notitle' => "You must enter a job title",
 );
 
 add_translation("en", $english);
