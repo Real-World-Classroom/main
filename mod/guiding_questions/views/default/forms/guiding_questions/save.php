@@ -1,83 +1,86 @@
-<div style="border-bottom: 1px solid #eeeeff; margin-bottom: 40px;"></div>
+<?php 
+$question_1_title = elgg_get_plugin_setting('question_1_title', 'guiding_questions');
+$question_2_title = elgg_get_plugin_setting('question_2_title', 'guiding_questions');
+$question_3_title = elgg_get_plugin_setting('question_3_title', 'guiding_questions');
+$question_4_title = elgg_get_plugin_setting('question_4_title', 'guiding_questions');
+$question_5_title = elgg_get_plugin_setting('question_5_title', 'guiding_questions');
+$question_6_title = elgg_get_plugin_setting('question_6_title', 'guiding_questions');
+?>
+
+<div id="gq-border"></div>
 <div>
-    <div style="margin-top:25px;">
+    <div class="gq-question-title">
         <label>
-            <?php echo elgg_echo("<h3 style='display:inline;'>1.</h3> &nbsp;
-                     What do you want right now, more than anything else?"); ?>
+            <?php echo elgg_echo("<h3>1.</h3>&nbsp; $question_1_title"); ?>
         </label>
     </div>
     <?php echo elgg_view('input/longtext',array('name' => 'answer1')); ?>
-    <div style="margin: 5px 0; text-align: right;">
+    <div class="gq-past-answers-button">
         <a class="elgg-button elgg-button-cancel" href="/realworldclassroom/guiding_questions/view/1">
             View your past answers here</a>
     </div>
 </div>
 
 <div>
-    <div style="margin-top:25px;">
+    <div class="gq-question-title">
         <label>
-            <?php echo elgg_echo("<h3 style='display:inline;'>2.</h3> &nbsp;
-                                                What would it do for you?"); ?>
+            <?php echo elgg_echo("<h3>2.</h3>&nbsp; $question_2_title"); ?>
         </label>
     </div>
     <?php echo elgg_view('input/longtext',array('name' => 'answer2')); ?>
-    <div style="margin: 5px 0; text-align: right;">
+    <div class="gq-past-answers-button">
         <a class="elgg-button elgg-button-cancel" href="/realworldclassroom/guiding_questions/view/2">
             View your past answers here</a>
     </div>
 </div>
 
 <div>
-    <div style="margin-top:25px;">
+    <div class="gq-question-title">
         <label>
-            <?php echo elgg_echo("<h3 style='display:inline;'>3.</h3> &nbsp;
-                                        How would you feel if you got it?"); ?>
+            <?php echo elgg_echo("<h3>3.</h3>&nbsp; $question_3_title"); ?>
         </label>
     </div>
     <?php echo elgg_view('input/longtext',array('name' => 'answer3')); ?>
-    <div style="margin: 5px 0; text-align: right;">
+    <div class="gq-past-answers-button">
         <a class="elgg-button elgg-button-cancel" href="/realworldclassroom/guiding_questions/view/3">
             View your past answers here</a>
     </div>
 </div>
 
 <div>
-    <div style="margin-top:25px;">
+    <div class="gq-question-title">
         <label>
-            <?php echo elgg_echo("<h3 style='display:inline;'>4.</h3> &nbsp;
-                                      How do you want to spend your time?"); ?>
+            <?php echo elgg_echo("<h3>4.</h3>&nbsp; $question_4_title"); ?>
         </label>
     </div>
     <?php echo elgg_view('input/longtext',array('name' => 'answer4')); ?>
-    <div style="margin: 5px 0; text-align: right;">
+    <div class="gq-past-answers-button">
         <a class="elgg-button elgg-button-cancel" href="/realworldclassroom/guiding_questions/view/4">
             View your past answers here</a>
     </div>
 </div>
 
 <div>
-    <div style="margin-top:25px;">
+    <div class="gq-question-title">
         <label>
-            <?php echo elgg_echo("<h3 style='display:inline;'>5.</h3> &nbsp;
-                                             What experience do you want?"); ?>
+            <?php echo elgg_echo("<h3>5.</h3>&nbsp; $question_5_title"); ?>
         </label>
     </div>
     <?php echo elgg_view('input/longtext',array('name' => 'answer5')); ?>
-    <div style="margin: 5px 0; text-align: right;">
+    <div class="gq-past-answers-button">
         <a class="elgg-button elgg-button-cancel" href="/realworldclassroom/guiding_questions/view/5">
             View your past answers here</a>
     </div>
 </div>
 
 <div>
-    <div style="margin-top:25px;">
+    <div class="gq-question-title">
         <label>
-            <?php echo elgg_echo("<h3 style='display:inline;'>6.</h3> &nbsp;
-                              What's your plan for getting what you want?"); ?>
+            <?php echo elgg_echo("<h3>6.</h3>&nbsp; $question_6_title"); ?>
         </label>
     </div>
     <?php echo elgg_view('input/longtext',array('name' => 'answer6')); ?>
-    <div style="margin: 5px 0; text-align: right;">
+    <div class="gq-past-answers-button">
         <a class="elgg-button elgg-button-cancel" href="/realworldclassroom/guiding_questions/view/6">
             View your past answers here</a>
     </div>
@@ -85,5 +88,5 @@
 
 <div>
     <?php echo elgg_view('input/submit', array('value' => elgg_echo('Save All Answers'),
-                                               'style' => "font-size: 20px;")); ?>
+                                               'id' => 'gq-save-answers-button')); ?>
 </div>

@@ -1,10 +1,27 @@
 <?php
 
-elgg_register_action("guiding_questions/save", elgg_get_plugins_path() . "guiding_questions/actions/guiding_questions/save.php");
 elgg_register_event_handler('init', 'system', 'guiding_questions_init');
 
 function guiding_questions_init() {
+
+    // extend CSS
+    elgg_extend_view('css/elgg', 'guiding_questions/css');
+    elgg_extend_view('css/admin', 'guiding_questions/admin_css');
+
+    // create Guiding Questions page in admin section
+    elgg_register_admin_menu_item('administer', 'guiding_questions', 'administer_utilities');
+    elgg_register_widget_type('guiding_questions',
+                              elgg_echo('guiding_questions:admin:title'),
+                              elgg_echo('guiding_questions:widget:description'),
+                              'admin'
+                             );
+
+    // register page handler
     elgg_register_page_handler('guiding_questions', 'guiding_questions_page_handler');
+
+    // register actions
+    elgg_register_action("guiding_questions/save", elgg_get_plugins_path() . "guiding_questions/actions/guiding_questions/save.php");
+    elgg_register_action("guiding_questions/delete", elgg_get_plugins_path() . "guiding_questions/actions/guiding_questions/delete.php");
 }
 
 function guiding_questions_page_handler($segments) {

@@ -7,140 +7,82 @@ gatekeeper();
 // for distributed plugins, be sure to use elgg_echo() for internationalization
 $title = "All Past Answers:";
 
+// collect individual question titles from settings
+$question_1_title = elgg_get_plugin_setting('question_1_title', 'guiding_questions');
+$question_2_title = elgg_get_plugin_setting('question_2_title', 'guiding_questions');
+$question_3_title = elgg_get_plugin_setting('question_3_title', 'guiding_questions');
+$question_4_title = elgg_get_plugin_setting('question_4_title', 'guiding_questions');
+$question_5_title = elgg_get_plugin_setting('question_5_title', 'guiding_questions');
+$question_6_title = elgg_get_plugin_setting('question_6_title', 'guiding_questions');
+
 // start building the main column of the page
 $content = elgg_view_title($title);
 
-$content .= elgg_echo('<h3><em>"What do you want right now, more than anything else?"</em></h3>');
-
+// display all answers to question 1
+$content .= elgg_echo("<h3><em>\"$question_1_title\"</em></h3>");
 $answers = elgg_get_entities(array(
     'type' => 'object',
     'subtype' => 'guiding_question_1',
     'owner_guid' => elgg_get_logged_in_user_guid()
 ));
-
 foreach ($answers as &$answer) {
-    $desc = $answer->description;
-    $date = elgg_view_friendly_time($answer->time_created);
-    $content .= elgg_echo("<div style='padding: 15px;
-							   margin: 20px;
-							   background: #f4f4f4;
-							   border: 2px dashed #acacca;
-							   border-radius: 10px;
-							   box-shadow: 0 0 0 4px #e8e8e8, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);'>
-							$desc<span style='color:#8a8aa8'>$date</span></div>");
+    $content .= elgg_view_entity($answer);
 }
 
-unset($answer);
-
-$content .= elgg_echo('<h3><em>"What would it do for you?"</em></h3>');
-
+// display all answers to question 2
+$content .= elgg_echo("<h3><em>\"$question_2_title\"</em></h3>");
 $answers = elgg_get_entities(array(
     'type' => 'object',
     'subtype' => 'guiding_question_2',
     'owner_guid' => elgg_get_logged_in_user_guid()
 ));
-
 foreach ($answers as &$answer) {
-    $desc = $answer->description;
-    $date = elgg_view_friendly_time($answer->time_created);
-    $content .= elgg_echo("<div style='padding: 15px;
-							   margin: 20px;
-							   background: #f4f4f4;
-							   border: 2px dashed #acacca;
-							   border-radius: 10px;
-							   box-shadow: 0 0 0 4px #e8e8e8, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);'>
-							$desc<span style='color:#8a8aa8'>$date</span></div>");
+    $content .= elgg_view_entity($answer);
 }
 
-unset($answer);
-
-$content .= elgg_echo('<h3><em>"How would you feel if you got it?"</em></h3>');
-
+// display all answers to question 3
+$content .= elgg_echo("<h3><em>\"$question_3_title\"</em></h3>");
 $answers = elgg_get_entities(array(
     'type' => 'object',
     'subtype' => 'guiding_question_3',
     'owner_guid' => elgg_get_logged_in_user_guid()
 ));
-
 foreach ($answers as &$answer) {
-    $desc = $answer->description;
-    $date = elgg_view_friendly_time($answer->time_created);
-    $content .= elgg_echo("<div style='padding: 15px;
-							   margin: 20px;
-							   background: #f4f4f4;
-							   border: 2px dashed #acacca;
-							   border-radius: 10px;
-							   box-shadow: 0 0 0 4px #e8e8e8, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);'>
-							$desc<span style='color:#8a8aa8'>$date</span></div>");
+    $content .= elgg_view_entity($answer);
 }
 
-unset($answer);
-
-$content .= elgg_echo('<h3><em>"How do you want to spend your time?"</em></h3>');
-
+// display all answers to question 4
+$content .= elgg_echo("<h3><em>\"$question_4_title\"</em></h3>");
 $answers = elgg_get_entities(array(
     'type' => 'object',
     'subtype' => 'guiding_question_4',
     'owner_guid' => elgg_get_logged_in_user_guid()
 ));
-
 foreach ($answers as &$answer) {
-    $desc = $answer->description;
-    $date = elgg_view_friendly_time($answer->time_created);
-    $content .= elgg_echo("<div style='padding: 15px;
-							   margin: 20px;
-							   background: #f4f4f4;
-							   border: 2px dashed #acacca;
-							   border-radius: 10px;
-							   box-shadow: 0 0 0 4px #e8e8e8, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);'>
-							$desc<span style='color:#8a8aa8'>$date</span></div>");
+    $content .= elgg_view_entity($answer);
 }
 
-unset($answer);
-
-$content .= elgg_echo('<h3><em>"What experience do you want?"</em></h3>');
-
+// display all answers to question 5
+$content .= elgg_echo("<h3><em>\"$question_5_title\"</em></h3>");
 $answers = elgg_get_entities(array(
     'type' => 'object',
     'subtype' => 'guiding_question_5',
     'owner_guid' => elgg_get_logged_in_user_guid()
 ));
-
 foreach ($answers as &$answer) {
-    $desc = $answer->description;
-    $date = elgg_view_friendly_time($answer->time_created);
-    $content .= elgg_echo("<div style='padding: 15px;
-							   margin: 20px;
-							   background: #f4f4f4;
-							   border: 2px dashed #acacca;
-							   border-radius: 10px;
-							   box-shadow: 0 0 0 4px #e8e8e8, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);'>
-							$desc<span style='color:#8a8aa8'>$date</span></div>");
+    $content .= elgg_view_entity($answer);
 }
 
-unset($answer);
-
-$content .= elgg_echo('<h3><em>"What\'s your plan for getting what you want?"</em></h3>');
-
+// display all answers to question 6
+$content .= elgg_echo("<h3><em>\"$question_6_title\"</em></h3>");
 $answers = elgg_get_entities(array(
     'type' => 'object',
     'subtype' => 'guiding_question_6',
     'owner_guid' => elgg_get_logged_in_user_guid()
 ));
-
 foreach ($answers as &$answer) {
-    $desc = $answer->description;
-    $date = elgg_view_friendly_time($answer->time_created);
-    $content .= elgg_echo("<div style='padding: 15px;
-                               margin: 20px;
-                               background: #f4f4f4;
-                               border: 2px dashed #acacca;
-                               border-radius: 10px;
-                               box-shadow: 0 0 0 4px #e8e8e8, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);'>
-                            $desc<span style='color:#8a8aa8'>$date</span></div>");
+    $content .= elgg_view_entity($answer);
 }
-
-unset($answer);
 
 // optionally, add the content for the sidebar
 $sidebar = elgg_echo('<ul class="elgg-menu elgg-menu-page elgg-menu-page-default">
