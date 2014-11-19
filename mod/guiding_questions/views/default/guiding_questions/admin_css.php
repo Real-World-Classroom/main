@@ -31,6 +31,12 @@
 	text-align: right;
 }
 
+.gq-settings-panel {
+    border: 1px solid rgba(140, 50, 30, 0.40);
+    border-radius: 5px;
+    padding: 10px;
+}
+
 #gq-border {
 	border-bottom: 1px solid #eeeeff;
 	margin-bottom: 40px;

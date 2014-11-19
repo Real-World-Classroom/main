@@ -1,85 +1,43 @@
 <?php
-// get the form inputs
-$answer1 = get_input('answer1');
-$answer2 = get_input('answer2');
-$answer3 = get_input('answer3');
-$answer4 = get_input('answer4');
-$answer5 = get_input('answer5');
-$answer6 = get_input('answer6');
 
-// create a guiding_questions objects to store answers
-$question1 = new ElggObject();
-$question1->subtype = "guiding_question_1";
-$question1->title = "What do you want right now, more than anything else?";
-$question1->description = $answer1;
+// get total number of active questions from form input
+$num_of_actives = get_input('num_of_actives');
 
-$question2 = new ElggObject();
-$question2->subtype = "guiding_question_2";
-$question2->title = "What would it do for you?";
-$question2->description = $answer2;
+// for each one, get user's answer and question's title/guid from form inputs, 
+// then create+save a new answer object and form a relationship with the question
+for ($i = 1; $i <= $num_of_actives; $i++) {
+    $answer_text = get_input('answer_'.$i);
+    $question_title = get_input('question_'.$i.'_title');
+    $question_guid = get_input('question_'.$i.'_guid');
 
-$question3 = new ElggObject();
-$question3->subtype = "guiding_question_3";
-$question3->title = "How would you feel if you got it?";
-$question3->description = $answer3;
+    // create the answer object
+    $answer = new ElggObject();
+    $answer->subtype = "guiding_question_answer";
+    $answer->title = $question_title;
+    $answer->description = $answer_text;
 
-$question4 = new ElggObject();
-$question4->subtype = "guiding_question_4";
-$question4->title = "How do you want to spend your time?";
-$question4->description = $answer4;
+    // for now make all answers private
+    $answer->access_id = ACCESS_PRIVATE;
 
-$question5 = new ElggObject();
-$question5->subtype = "guiding_question_5";
-$question5->title = "What experience do you want?";
-$question5->description = $answer5;
+    // owner is logged in user
+    $answer->owner_guid = elgg_get_logged_in_user_guid();
 
-$question6 = new ElggObject();
-$question6->subtype = "guiding_question_6";
-$question6->title = "What's your plan for getting what you want?";
-$question6->description = $answer6;
-
-// for now make all guiding_questions answers private
-$question1->access_id = ACCESS_PRIVATE;
-$question2->access_id = ACCESS_PRIVATE;
-$question3->access_id = ACCESS_PRIVATE;
-$question4->access_id = ACCESS_PRIVATE;
-$question5->access_id = ACCESS_PRIVATE;
-$question6->access_id = ACCESS_PRIVATE;
-
-// owner is logged in user
-$question1->owner_guid = elgg_get_logged_in_user_guid();
-$question2->owner_guid = elgg_get_logged_in_user_guid();
-$question3->owner_guid = elgg_get_logged_in_user_guid();
-$question4->owner_guid = elgg_get_logged_in_user_guid();
-$question5->owner_guid = elgg_get_logged_in_user_guid();
-$question6->owner_guid = elgg_get_logged_in_user_guid();
-
-// save to database and get id of the new guiding_questions object,
-// but only if user entered an answer
-if (!empty($answer1)) {
-	$question1_guid = $question1->save();
-}
-if (!empty($answer2)) {
-	$question2_guid = $question2->save();
-}
-if (!empty($answer3)) {
-	$question3_guid = $question3->save();
-}
-if (!empty($answer4)) {
-	$question4_guid = $question4->save();
-}
-if (!empty($answer5)) {
-	$question5_guid = $question5->save();
-}
-if (!empty($answer6)) {
-	$question6_guid = $question6->save();
+    // save to database and get id of the new guiding_questions object,
+    // but only if user entered an answer
+    if (!empty($answer_text)) {
+    	$answer_guid = $answer->save();
+    	// if answer was saved, form relationship with question guid, otherwise report failure
+    	if ($answer_guid) {
+    		$success = $answer->addRelationship($question_guid, 'answer');
+    		// register error if relationship failed
+    		if (!$success) {
+    			register_error("Error: question-answer relationship could not be built");
+    		}
+    	} else {
+    		register_error("Sorry, an error occurred and one or more of your answers were not saved");
+    	}
+    }
 }
 
-// if any guiding_questions objects were saved, report success, otherwise report failure
-if ($question1_guid || $question2_guid || $question3_guid || $question4_guid || $question5_guid || $question6_guid) {
-   system_message("Your answers were saved");
-   forward(REFERER); // REFERER is a global variable that defines the previous page
-} else {
-   register_error("No answers were saved");
-   forward(REFERER);
-}
+system_message("Your answers were saved");
+forward(REFERER); // REFERER is a global variable that defines the previous page

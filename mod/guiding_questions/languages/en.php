@@ -3,12 +3,8 @@
 $english = array(
 
 'admin:administer_utilities:guiding_questions' => 'Guiding Questions',
-'item:object:guiding_question_1' => 'Answers to Guiding Question #1',
-'item:object:guiding_question_2' => 'Answers to Guiding Question #2',
-'item:object:guiding_question_3' => 'Answers to Guiding Question #3',
-'item:object:guiding_question_4' => 'Answers to Guiding Question #4',
-'item:object:guiding_question_5' => 'Answers to Guiding Question #5',
-'item:object:guiding_question_6' => 'Answers to Guiding Question #6',
+'item:object:guiding_question' => 'Guiding Questions',
+'item:object:guiding_question_answer' => 'Guiding Question Answers',
 'guiding_questions:label' => 'Guiding Questions',
 'guiding_questions:title' => 'Guiding Questions',
 
@@ -20,15 +16,18 @@ $english = array(
 'guiding_questions:delete:success' => 'Your answer was deleted successfully.',
 'guiding_questions:delete:failed' => 'Sorry, this answer could not be deleted.',
 
-'guiding_questions:list:no_guiding_questions' => 'Currently there\'s no answers from site members available.',
+'guiding_questions:user:no_answers' => 'You have no answers recorded for this question.',
+'guiding_questions:admin:no_answers' => 'Currently there\'s no answers from site members available.',
 
-'guiding_questions:question_1_title' => "Guiding Question 1: ",
-'guiding_questions:question_2_title' => "Guiding Question 2: ",
-'guiding_questions:question_3_title' => "Guiding Question 3: ",
-'guiding_questions:question_4_title' => "Guiding Question 4: ",
-'guiding_questions:question_5_title' => "Guiding Question 5: ",
-'guiding_questions:question_6_title' => "Guiding Question 6: ",
-'guiding_questions:settings:titles' => "You can specify the text for each guiding question below: ",
+'guiding_questions:settings:new_question' => "Create a New Question:",
+'guiding_questions:settings:new_question_success' => "Guiding Question created but not yet active, you must activate it below",
+'guiding_questions:settings:new_question_failure' => "Sorry, an error occurred and your new Guiding Question could not be created",
+'guiding_questions:settings:activations' => "Activate/Deactivate Questions:",
+'guiding_questions:settings:activate' => "Activate - ",
+'guiding_questions:settings:deactivate' => "Deactivate - ",
+'guiding_questions:settings:edit_questions' => "Edit Active Questions:",
+'guiding_questions:settings:edit_notice' => "(NOTE - Only use this for typos, re-wording, etc. Edited question must be equivalent to original!)",
+'guiding_questions:settings:saved' => "Guiding Question settings have been saved",
 
 );
 

@@ -3,8 +3,8 @@
     <name>Guiding Questions</name>
     <id>guiding_questions</id>
     <author>Dan Charest</author>
-    <version>1.0</version>
-    <description>Adds the "Guiding Questions" page.</description>
+    <version>1.3</version>
+    <description>Adds the "Guiding Questions" feature.</description>
 
     <requires>
         <type>elgg_release</type>
