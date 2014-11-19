@@ -27,7 +27,6 @@ foreach ($actives as &$active) {
         'relationship' => 'answer',
         'relationship_guid' => $active_guid,
         'inverse_relationship' => TRUE,
-        'owner_guid' => elgg_get_logged_in_user_guid(),
         'limit' => $limit,
         'pagination' => false
     ));
