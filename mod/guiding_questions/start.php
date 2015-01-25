@@ -71,6 +71,8 @@ function guiding_questions_save_admin_settings() {
         $new_question->active = FALSE;
         // owner is logged in user
         $new_question->owner_guid = elgg_get_logged_in_user_guid();
+        // guiding_question object should be accessible to any logged in user
+        $new_question->access_id = 1;
         // save to database and get id of the new guiding_question object
         $new_question_guid = $new_question->save();
         // if the new question object was saved, report success, otherwise report failure
